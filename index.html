@@ -3,77 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Lesson-1</title>
-<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
-<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
-<!--    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Marck+Script&display=swap" rel="stylesheet">-->
-<!--    <link rel="stylesheet" href="CSS/style.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Marck+Script&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/reset%20css.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-<header>
-    <img src="img/icons/logo-img.png" alt="logo">
-    <img src="img/icons/find-nav.svg" alt="find">
-    <ul>
-        <li>
-            <button>
+<header class="header">
+    <div class="container">
+        <img class="header__logo" src="img/icons/logo-img.png" alt="logo">
+        <img class="header__find" src="img/icons/find-nav.svg" alt="find">
+        <ul class="header__menu-list">
+            <li>
+                <button class="header__burger">
                 <img src="img/icons/menu-nav.svg" alt="menu">
-            </button>
-        </li>
-        <li>
-            <a href="#">
-                <img src="img/icons/person.svg" alt="">
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="img/icons/basket.svg" alt="">
-            </a>
-        </li>
-    </ul>
-    <nav>
-        <h2>menu</h2>
-        <ul>
-            <li>
-                <h3>man</h3>
-                <ul>
-                    <li>Accessories</li>
-                    <li>Bags</li>
-                    <li>Denim</li>
-                    <li>T-Shirts</li>
-                </ul>
+                </button>
             </li>
             <li>
-                <h3>woman</h3>
-                <ul>
-                    <li>Accessories</li>
-                    <li>Jackets & Coast</li>
-                    <li>Polos</li>
-                    <li>T-Shirts</li>
-                    <li>Shirts</li>
-                </ul>
+                <a href="#" class="header-link">
+                    <img class="header__person-icon" src="img/icons/person.svg" alt="">
+                </a>
             </li>
             <li>
-                <h3>kids</h3>
-                <ul>
-                    <li>Accessories</li>
-                    <li>Jackets & Coast</li>
-                    <li>Polos</li>
-                    <li>T-Shirts</li>
-                    <li>Shirts</li>
-                    <li>Bags</li>
-                </ul>
+                <a href="#">
+                    <img src="img/icons/basket.svg" alt="">
+                </a>
             </li>
         </ul>
-    </nav>
+        <nav class="header__nav">
+            <h2 class="header__nav-title">menu</h2>
+            <ul class="header__nav-list">
+                <li class="header__nav-item nav-item">
+                    <h3 class="nav-item">man</h3>
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Bags</li>
+                        <li>Denim</li>
+                        <li>T-Shirts</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>woman</h3>
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Jackets & Coast</li>
+                        <li>Polos</li>
+                        <li>T-Shirts</li>
+                        <li>Shirts</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>kids</h3>
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Jackets & Coast</li>
+                        <li>Polos</li>
+                        <li>T-Shirts</li>
+                        <li>Shirts</li>
+                        <li>Bags</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
-    <section class="content">
-        <img src="img/content.jpg" alt="content">
-        <h1>The brand</h1>
-        <h2> of luxerious <span>fashion</span></h2>
+    <section class="brand">
+        <img class="brand_img" src="img/content.jpg" alt="content">
+        <h1>The brand of <span>luxerious <span>fashion</span></span></h1>
     </section>
-    <section class="offer">
-        <h2>Sale</h2>
+    <section class="sales">
+        <h2 class="visually-hidden">Sale</h2>
         <ul>
             <li>
                 <img src="img/women.jpg" alt="women">
@@ -144,7 +147,7 @@
                 <p class="price">$52.00</p>
             </li>
         </ul>
-     <button type="button" disabled="disabled">Browse All Product</button>
+        <button type="button" disabled="disabled">Browse All Product</button>
 
 
     </section>
@@ -154,17 +157,20 @@
             <li>
                 <img src="img/icons/delivery.svg" alt="delivery">
                 <h3>Free Delivery</h3>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                    models.</p>
             </li>
             <li>
                 <img src="img/icons/sale.svg" alt="sale">
                 <h3>Sales & discounts</h3>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                    models.</p>
             </li>
             <li>
                 <img src="img/icons/quallity.svg" alt="quallity">
                 <h3>Quality assurance</h3>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                    models.</p>
             </li>
         </ul>
     </section>
@@ -182,13 +188,13 @@
         <button type="button" disabled>Subscribe</button>
     </form>
 
-    <p>&copy;2021  Brand  All Rights Reserved.</p>
-    <div class="social">
-        <div class="fb"></div>
-        <div class="inst"></div>
-        <div class="vk"></div>
-        <div class="twit"></div>
-    </div>
+    <p>&copy;2021 Brand All Rights Reserved.</p>
+    <ul class="social">
+        <li><a  class="fb" href=""></a></li>
+        <li><a  class="inst" href=""></a></li>
+        <li><a  class="vk" href=""></a></li>
+        <li><a  class="twit" href=""></a></li>
+    </ul>
 </footer>
 </body>
 </html>
