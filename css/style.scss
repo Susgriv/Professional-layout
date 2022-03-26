@@ -1,8 +1,18 @@
 //color
+$black: rgba(0, 0, 0, 1);
+$button: rgb(255, 106, 106);
+$button-text: rgb(242, 99, 118);
+$button-bkg: #5e5e5e;
 $black-bkg: #222;
 $pink-bkg: #f1e4e6;
 $brand-pink: #f16d7f;
-$sales-bkg: rgba(33, 22, 22, 0.7);
+$sales-text: #fff;
+$color-text-title: #222;
+$color-text: rgb(159, 159, 159);
+$adventages-title: #f8f8f8;
+$product-item-text: #5d5d5d;
+$sales-bkg: rgba(33, 22, 22, .7);
+
 
 //visually-hidden
 .visually-hidden {
@@ -21,9 +31,10 @@ $sales-bkg: rgba(33, 22, 22, 0.7);
 body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
-  line-height: 17px;
   font-style: normal;
   font-weight: 400;
+  line-height: 17px;
+  max-width: 1600px;
 }
 
 .container {
@@ -66,6 +77,7 @@ body {
 
 .brand {
   display: flex;
+  justify-content: center;
 }
 
 .brand__img {
@@ -78,15 +90,16 @@ body {
   background-color: $pink-bkg;
   display: flex;
   flex-grow: 1;
-  padding-left: 92px;
+  padding-left: 64px;
 }
 
 .brand__title {
+  border-left: 12px $brand-pink solid;
   font-size: 48px;
   font-weight: 900;
   line-height: 58px;
+  padding-left: 16px;
   text-transform: uppercase;
-  //border-left: 12px $brand-pink solid;
 }
 
 .brand__title-lower {
@@ -100,30 +113,247 @@ body {
   color: $brand-pink;
 }
 
+.sales {
+  margin-top: 65px;
+}
+
 .sales__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
 }
 
 .sales__item {
+  align-items: center;
   background-color: $sales-bkg;
+  display: flex;
+  flex-direction: column;
   height: 260px;
+  justify-content: center;
   width: 360px;
 }
-.sales__item--woman {
-  background-image: url("../img/products/women.jpg");
+
+.sales__title {
+  color: $sales-text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
 }
+
+.sales__item-text {
+  color: $brand-pink;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.sales__item--woman {
+  background-image: url('../img/sales/women.jpg');
+}
+
 .sales__item--man {
-  background-image: url("../img/products/man.jpg");
+  background-image: url('../img/sales/man.jpg');
 }
 
 .sales__item--kids {
-  background-image: url("../img/products/kids.jpg");
+  background-image: url('../img/sales/kids.jpg');
 }
 
-.sales__item--accessories{
-  background-image: url("../img/products/accessories.jpg");
-  //background-repeat: no-repeat;
+.sales__item--accessories {
+  background-image: url('../img/sales/accessories.jpg');
+  max-height: 180px;
   width: 100%;
+}
+
+.products {
+  text-align: center;
+  margin-top: 97px;
+}
+
+.products__title {
+  color: $color-text-title;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.products__sub-title {
+  margin-top: 6px;
+  color: $color-text;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 48px;
+}
+
+.products__item {
+  display: block;
+  text-align: start;
+  width: 360px;
+}
+
+.products__item-img {
+  padding-bottom: 25px;
+}
+
+.product__item-title {
+  color: $black;
+  font-size: 13px;
+  line-height: 16px;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+}
+
+.product__item-text {
+  color: $product-item-text;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  padding-bottom: 18px;
+}
+
+.product__item-price {
+  color: $brand-pink;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.product__button {
+  background: $sales-text;
+  border: 1px solid $button;
+  color: $button-text;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 49px;
+  padding: 14px 39px;
+}
+
+.advantages {
+  background-color: $black-bkg;
+  margin-top: 100px;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  text-align: center;
+  padding: 104px 0;
+}
+
+.advantages__item-img {
+
+}
+
+.advantages__item-title {
+  color: $adventages-title;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 25px;
+}
+
+.advantages__item-text {
+  color: $adventages-title;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  padding-top: 16px;
+}
+
+.footer {
+  background-image: url('../img/footer/footer-bkg.png');
+}
+
+.footer__quote-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 87px;
+}
+
+.footer__quote-list {
+  width: 360px;
+  text-align: center;
+}
+
+.footer__quote-img {
+
+}
+
+.footer__quote-text {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.footer__form {
+  text-align: center;
+}
+
+.footer__form-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.footer__form-text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.footer__form-label {
+  border: 2px solid red;
+  border-radius: 25px;
+}
+
+.footer__form-email {
+
+}
+
+.footer__wrp {
+  background-color: $black-bkg;
+  margin-top: 126px;
+}
+
+.footer__copy {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $adventages-title;
+  padding: 30px 0;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.footer__social-item {
+}
+
+.footer__social-fb {
+}
+
+.footer__social-inst {
+}
+
+.footer__social-vk {
+}
+
+.footer__social-twit {
 }
