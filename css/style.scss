@@ -1,0 +1,129 @@
+//color
+$black-bkg: #222;
+$pink-bkg: #f1e4e6;
+$brand-pink: #f16d7f;
+$sales-bkg: rgba(33, 22, 22, 0.7);
+
+//visually-hidden
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.header {
+  background-color: $black-bkg;
+}
+
+.header__wrp {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+}
+
+.header__logo {
+  margin-right: 41px;
+}
+
+.header__menu-list {
+  align-items: center;
+  display: flex;
+}
+
+.header__burger {
+  background-color: transparent;
+  border: none;
+}
+
+.header-link {
+  margin-left: 33px;
+}
+
+.header__nav {
+  display: none;
+}
+
+.brand {
+  display: flex;
+}
+
+.brand__img {
+  height: 765px;
+  width: 800px;
+}
+
+.brand__title-wpr {
+  align-items: center;
+  background-color: $pink-bkg;
+  display: flex;
+  flex-grow: 1;
+  padding-left: 92px;
+}
+
+.brand__title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  text-transform: uppercase;
+  //border-left: 12px $brand-pink solid;
+}
+
+.brand__title-lower {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.brand__title-pink {
+  color: $brand-pink;
+}
+
+.sales__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sales__item {
+  background-color: $sales-bkg;
+  height: 260px;
+  width: 360px;
+}
+.sales__item--woman {
+  background-image: url("../img/products/women.jpg");
+}
+.sales__item--man {
+  background-image: url("../img/products/man.jpg");
+}
+
+.sales__item--kids {
+  background-image: url("../img/products/kids.jpg");
+}
+
+.sales__item--accessories{
+  background-image: url("../img/products/accessories.jpg");
+  //background-repeat: no-repeat;
+  width: 100%;
+}
