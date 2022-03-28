@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--    подключение @media-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lesson-1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,6 +11,8 @@
           rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media/screen768.css">
+    <link rel="stylesheet" href="css/media/screen375.css">
 </head>
 <body>
 <header class="header">
@@ -18,17 +22,17 @@
             <img class="header__find" src="img/icons/find-nav.svg" alt="find">
         </div>
         <ul class="header__menu-list">
-            <li>
+            <li class="header__menu-title">
                 <button class="header__burger">
                     <img src="img/icons/menu-nav.svg" alt="menu">
                 </button>
             </li>
-            <li>
+            <li class="header__menu-title">
                 <a href="#" class="header-link">
                     <img class="header__person-icon" src="img/icons/person.svg" alt="person">
                 </a>
             </li>
-            <li>
+            <li class="header__menu-title">
                 <a href="#" class="header-link">
                     <img class="header__basket-icon" src="img/icons/basket.svg" alt="basket">
                 </a>
@@ -75,7 +79,7 @@
     <section class="brand">
         <img class="brand__img" src="img/brand/content.jpg" alt="content">
         <div class="brand__title-wpr">
-            <h1 class="brand__title">The brand of <span class="brand__title-lower">luxerious <span
+            <h1 class="brand__title">The brand <span class="brand__title-lower">of luxerious <span
                     class="brand__title-pink">fashion</span></span></h1>
         </div>
     </section>
@@ -161,21 +165,21 @@
         <h2 class="advantages__title visually-hidden">advantages</h2>
         <ul class="advantages__list container">
             <li class="advantages__item">
-                <img class="advantages__item-img" width="40" height="40" src="img/icons/delivery.svg" alt="delivery">
+                <img class="advantages__item-img" src="img/icons/delivery.svg" alt="delivery">
                 <h3 class="advantages__item-title">Free Delivery</h3>
                 <p class="advantages__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov
                     tion with extensive
                     models.</p>
             </li>
             <li class="advantages__item">
-                <img class="advantages__item-img" width="40" height="40" src="img/icons/sale.svg" alt="sale">
+                <img class="advantages__item-img" src="img/icons/sale.svg" alt="sale">
                 <h3 class="advantages__item-title">Sales & discounts</h3>
                 <p class="advantages__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov
                     tion with extensive
                     models.</p>
             </li>
             <li class="advantages__item">
-                <img class="advantages__item-img" width="40" height="40" src="img/icons/quallity.svg" alt="quallity">
+                <img class="advantages__item-img" src="img/icons/quallity.svg" alt="quallity">
                 <h3 class="advantages__item-title">Quality assurance</h3>
                 <p class="advantages__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov
                     tion with extensive
@@ -185,23 +189,26 @@
     </section>
 </main>
 <footer class="footer">
-    <div class="container footer__quote-wrap">
-        <div class="footer__quote-list">
-            <img class="footer__quote-img" src="img/footer/footer.png" alt="footer.png">
-            <p class="footer__quote-text">&ldquo;Vestibulum quis porttitor dui! Quisque viverra nunc mi, <em>a pulvinar
-                purus condimentum</em>&ldquo;
-            </p>
+    <div class="footer__wrap">
+        <div class="container footer__quote-wrap">
+            <div class="footer__quote-list">
+                <img class="footer__quote-img" src="img/footer/footer.png" alt="footer.png">
+                <p class="footer__quote-text">&ldquo;Vestibulum quis porttitor dui! Quisque viverra nunc mi, <em>a
+                    pulvinar
+                    purus condimentum</em>&ldquo;
+                </p>
+            </div>
+            <form class="footer__form">
+                <h2 class="footer__form-title">SUBSCRIBE</h2>
+                <p class="footer__form-text">for our newletter and promotion</p>
+                <label class="footer__form">
+                    <input class="footer__form-email" type="email" placeholder="Enter Your Email">
+                </label>
+                <button class="footer__form-button" type="button" disabled>Subscribe</button>
+            </form>
         </div>
-        <form class="footer__form">
-            <h2 class="footer__form-title">SUBSCRIBE</h2>
-            <p class="footer__form-text">for our newletter and promotion</p>
-            <label class="footer__form">
-                <input class="footer__form-email" type="email" placeholder="Enter Your Email">
-            </label>
-            <button class="footer__form-button" type="button" disabled>Subscribe</button>
-        </form>
     </div>
-    <div class="footer__wrp">
+    <div class="footer__wrp-social">
         <div class="container footer__social">
             <p class="footer__copy">&copy;2021 Brand All Rights Reserved.</p>
             <ul class="footer__social-list">

@@ -53,8 +53,9 @@ body {
   justify-content: center; }
 
 .brand__img {
-  height: 765px;
-  width: 800px; }
+  max-width: 800px;
+  object-fit: cover;
+  width: calc(100%/2); }
 
 .brand__title-wpr {
   align-items: center;
@@ -126,8 +127,8 @@ body {
   width: 100%; }
 
 .products {
-  text-align: center;
-  margin-top: 97px; }
+  margin-top: 97px;
+  text-align: center; }
 
 .products__title {
   color: #222;
@@ -135,10 +136,10 @@ body {
   line-height: 36px; }
 
 .products__sub-title {
-  margin-top: 6px;
   color: #9f9f9f;
   font-size: 14px;
-  line-height: 17px; }
+  line-height: 17px;
+  margin-top: 6px; }
 
 .products__list {
   display: flex;
@@ -147,6 +148,7 @@ body {
   margin-top: 48px; }
 
 .products__item {
+  background: #f8f8f8;
   display: block;
   text-align: start;
   width: 360px; }
@@ -158,7 +160,7 @@ body {
   color: black;
   font-size: 13px;
   line-height: 16px;
-  padding-bottom: 13px;
+  padding: 0 0 13px 18px;
   text-transform: uppercase; }
 
 .product__item-text {
@@ -166,12 +168,13 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
-  padding-bottom: 18px; }
+  padding: 0 0 18px 18px; }
 
 .product__item-price {
   color: #f16d7f;
   font-size: 16px;
-  line-height: 19px; }
+  line-height: 19px;
+  padding: 0 0 20px 18px; }
 
 .product__button {
   background: #fff;
@@ -191,8 +194,12 @@ body {
   justify-content: space-between; }
 
 .advantages__item {
-  text-align: center;
-  padding: 104px 0; }
+  padding: 104px 0;
+  text-align: center; }
+
+.advantages__item-img {
+  min-height: 40px;
+  min-width: 40px; }
 
 .advantages__item-title {
   color: #f8f8f8;
@@ -208,17 +215,17 @@ body {
   line-height: 17px;
   padding-top: 16px; }
 
-.footer {
+.footer__wrap {
   background-image: url("../img/footer/footer-bkg.png"); }
 
 .footer__quote-wrap {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-top: 87px; }
+  display: flex;
+  height: 448px;
+  justify-content: space-between; }
 
 .footer__quote-list {
-  width: 360px;
+  max-width: 360px;
   text-align: center; }
 
 .footer__quote-text {
@@ -227,7 +234,8 @@ body {
   line-height: 24px; }
 
 .footer__form {
-  text-align: center; }
+  text-align: center;
+  width: 360px; }
 
 .footer__form-title {
   font-size: 24px;
@@ -238,28 +246,24 @@ body {
   font-size: 18px;
   line-height: 30px; }
 
-.footer__form-label {
-  border: 2px solid red;
-  border-radius: 25px; }
-
-.footer__wrp {
-  background-color: #222;
-  margin-top: 126px; }
-
-.footer__copy {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #f8f8f8;
-  padding: 30px 0; }
+.footer__wrp-social {
+  background-color: #222; }
 
 .footer__social {
+  align-items: center;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  min-height: 79px; }
+
+.footer__copy {
+  color: #f8f8f8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px; }
 
 .footer__social-list {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 7px; }
 
 /*# sourceMappingURL=style.css.map */
