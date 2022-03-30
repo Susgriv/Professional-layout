@@ -1,0 +1,32 @@
+.header {
+  background-color: $black-bkg;
+}
+
+.header__wrp {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+}
+
+.header__logo {
+  margin-right: 41px;
+}
+
+.header__menu-list {
+  align-items: center;
+  display: flex;
+}
+
+.header__burger {
+  background-color: transparent;
+  border: none;
+}
+
+.header-link {
+  margin-left: 33px;
+}
+
+.header__nav {
+  display: none;
+}

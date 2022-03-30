@@ -1,0 +1,61 @@
+.footer__wrap {
+  background-image: url('../img/footer/footer-bkg.png');
+}
+
+.footer__quote-wrap {
+  align-items: center;
+  display: flex;
+  height: 448px;
+  justify-content: space-between;
+}
+
+.footer__quote-list {
+  max-width: 360px;
+  text-align: center;
+}
+
+.footer__quote-text {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.footer__form {
+  text-align: center;
+  width: 360px;
+}
+
+.footer__form-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.footer__form-text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.footer__wrp-social {
+  background-color: $black-bkg;
+}
+
+.footer__social {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 79px;
+}
+
+.footer__copy {
+  color: $adventages-title;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer__social-list {
+  align-items: center;
+  display: flex;
+  gap: 7px;
+}

@@ -1,0 +1,43 @@
+@import "../variables";
+.brand {
+  display: flex;
+  justify-content: center;
+}
+.brand__zzz {
+  color:red;
+}
+
+.brand__img {
+  max-width: 800px;
+  object-fit: cover;
+  width: $brand-img-calc;
+}
+
+.brand__title-wpr {
+  align-items: center;
+  background-color: $pink-bkg;
+  display: flex;
+  flex-grow: 1;
+  padding-left: 64px;
+}
+
+
+.brand__title {
+  border-left: 12px $brand-pink solid;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  padding-left: 16px;
+  text-transform: uppercase;
+}
+
+.brand__title-lower {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.brand__title-pink {
+  color: $brand-pink;
+}

@@ -1,23 +1,24 @@
 @media (max-width: 375px) {
   .container {
     margin: 0 auto;
-    max-width: 375px; }
-
+    max-width: 375px;
+  }
   .brand__img {
-    display: none; }
+    display: none;
 
+  }
   .brand__title-wpr {
-    padding: 148px 0;
-    width: 236px; }
-
+  padding: 148px 0;
+width: 236px;
+  }
   .brand__title {
     font-size: 38px;
-    line-height: 45px; }
-
+    line-height: 45px;
+  }
   .brand__title-lower {
     display: block;
     font-size: 20px;
     line-height: 24px;
-    font-weight: bold; } }
-
-/*# sourceMappingURL=screen375.css.map */
+    font-weight: bold;
+  }
+}
