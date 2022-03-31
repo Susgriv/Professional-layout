@@ -6,37 +6,46 @@
   &__quote-wrap {
     align-items: center;
     display: flex;
-    min-height: 448px;
     justify-content: space-between;
   }
 
   &__quote-list {
     max-width: 360px;
     text-align: center;
+    padding: 97px 0 140px 0;
+  }
+
+  &__quote-img {
+    padding-top: 10px;
   }
 
   &__quote-text {
     font-size: 20px;
     font-style: italic;
     line-height: 24px;
+    padding-top: 30px;
   }
-
+  //form//
   &__form {
     text-align: center;
     width: 360px;
+    padding: 30px 0 40px 0;
   }
 
   &__form-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 40px;
+    text-transform: uppercase;
   }
 
   &__form-text {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 24px;
+    padding-bottom: 60px;
   }
 
+  ///social///
   &__wrp-social {
     background-color: $black-bkg;
   }
@@ -48,7 +57,7 @@
     min-height: 79px;
   }
 
-  &__copy {
+  &__social-copy {
     color: $adventages-title;
     font-size: 16px;
     font-weight: 400;
@@ -60,4 +69,26 @@
     display: flex;
     gap: 7px;
   }
+}
+.footer__social-icon {
+  fill: #ffffff;
+  transition: all 1s ease .2s;
+}
+.social-icon__color {
+  fill: #222222;
+  transition: all 1s ease .2s;
+}
+.footer__social-link:hover .footer__social-icon,
+.footer__social-link:focus .footer__social-icon
+ {
+  fill: #f26376;
+  transition: all 1s ease .2s;
+}
+.footer__social-link:hover .social-icon__color,
+.footer__social-link:focus .social-icon__color {
+  fill: white;
+}
+.footer__social-link:active .footer__social-icon,
+.footer__social-link:focus .social-icon__color {
+  opacity: .7;
 }

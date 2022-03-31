@@ -75,16 +75,17 @@
     border: 1px solid $sales-text;
     color: white;
     text-align: center;
-  }
+      }
 
   &__item-button {
     display: none;
-    background: url("../../img/icons/basket.svg") no-repeat 5px center;
+    background: url(../img/icons/basket.svg) no-repeat 5px center;
     height: 32px;
     line-height: 32px;
     padding: 5px 5px 5px 50px;
+    text-decoration: none;
   }
-
+  
   &__item-container:before {
     display: none;
   }
