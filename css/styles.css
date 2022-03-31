@@ -171,7 +171,7 @@
     text-align: center; }
   .products__item-button {
     display: none;
-    background: url("../../img/icons/basket.svg") no-repeat 5px center;
+    background: url("../img/icons/basket.svg") no-repeat 5px center;
     height: 32px;
     line-height: 32px;
     padding: 5px 5px 5px 50px; }
