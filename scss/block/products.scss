@@ -1,76 +1,96 @@
 .products {
   margin-top: 97px;
   text-align: center;
-}
 
-.products__title {
-  color: $color-text-title;
-  font-size: 30px;
-  line-height: 36px;
-}
+  &__title {
+    color: $color-text-title;
+    font-size: 30px;
+    line-height: 36px;
+  }
 
-.products__sub-title {
-  color: $color-text;
-  font-size: 14px;
-  line-height: 17px;
-  margin-top: 6px;
-}
+  &__sub-title {
+    color: $color-text;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 6px;
+  }
 
-.products__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 48px;
-}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 48px;
 
-.products__item {
-  background: $adventages-title;
-  display: block;
-  text-align: start;
-  width: 360px;
-}
+    .products__item {
+      background: $adventages-title;
+      display: block;
+      text-align: start;
+      width: 360px;
 
-.products__item-img {
-  padding-bottom: 25px;
-}
+      &-container {
+        position: relative;
+        margin-bottom: 25px;
+        transition: all .5s ease .3s;
+      }
 
-.product__item-title {
-  color: $black;
-  font-size: 13px;
-  line-height: 16px;
-  padding: 0 0 13px 18px;
-  text-transform: uppercase;
-}
+      &-title {
+        color: $black;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 0 0 13px 18px;
+        text-transform: uppercase;
+      }
 
-.product__item-text {
-  color: $product-item-text;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 17px;
-  padding: 0 0 18px 18px;
-}
+      &-text {
+        color: $product-item-text;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        padding: 0 0 18px 18px;
+      }
 
-.product__item-price {
-  color: $brand-pink;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 0 0 20px 18px;
-}
+      &-price {
+        color: $brand-pink;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 0 0 20px 18px;
+      }
+    }
+  }
 
-.product__button {
-  background: $sales-text;
-  border: 1px solid $button;
-  color: $button-text;
-  font-size: 16px;
-  line-height: 19px;
-  margin-top: 49px;
-  padding: 14px 39px;
-  transition: all 1s ease .5s;
-}
+  &__item-container:before {
+    content: '';
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+  }
 
+  &__item-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid $sales-text;
+    color: white;
+    text-align: center;
+  }
 
-.product__button:hover {
-  background: $button-text;
-  color: $sales-text;
-  transition: all 1s ease .5s;
+  &__item-button {
+    display: none;
+    background: url("../../img/icons/basket.svg") no-repeat 5px center;
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 5px 5px 50px;
+  }
+
+  &__item-container:before {
+    display: none;
+  }
+
+  &__item:hover &__item-button,
+  &__item:hover &__item-container:before {
+    display: block;
+  }
 }

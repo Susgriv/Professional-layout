@@ -5,6 +5,7 @@
 @import "block/products.scss";
 @import "block/advantages.scss";
 @import "block/footer.scss";
+@import "block/button";
 @import "media/screen375.scss";
 @import "media/screen768.scss";
 //visually-hidden
@@ -37,3 +38,4 @@ body {
   max-width: 1140px;
   min-width: 100px;
 }
+
