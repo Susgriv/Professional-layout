@@ -1,0 +1,23 @@
+.button {
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 49px;
+  padding: 14px 39px;
+  transition: all .3s ease .2s;
+
+  &:hover,
+  &:focus {
+    background: $button-text;
+    color: $sales-text;
+    transition: all .3s ease .2s;
+  }
+  &:active {
+    opacity: .5;
+  }
+}
+
+.products__button {
+  background: $sales-text;
+  border: 1px solid $button;
+  color: $button-text;
+}

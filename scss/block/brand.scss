@@ -1,12 +1,7 @@
-@import "../variables";
 .brand {
   display: flex;
   justify-content: center;
 }
-.brand__zzz {
-  color:red;
-}
-
 .brand__img {
   max-width: 800px;
   object-fit: cover;
