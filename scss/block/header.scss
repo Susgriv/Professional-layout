@@ -11,12 +11,16 @@
   display: flex;
   justify-content: space-between;
   min-height: 75px;
-  position: relative;
-
 }
 
 .header__container-logo {
   margin-right: 41px;
+  @media (max-width: 768px) {
+    margin-left: 32px;
+  }
+  @media (max-width: 375px) {
+   margin-left: 16px;
+  }
 }
 
 .header__container-link:hover .header__container-icon,
@@ -35,6 +39,15 @@
 .header__menu-list {
   align-items: center;
   display: flex;
+  margin-right: 10px;
+
+  @media (max-width: 768px) {
+    margin-right: 25px;
+  }
+  @media (max-width: 375px) {
+    margin-right: 16px;
+  }
+
 }
 
 .header__burger, .header__menu-title {
@@ -47,6 +60,11 @@
   position: absolute;
   left: 120px;
   top: 30px;
+}
+.menu-title-basket, .menu-title-person {
+  @media (max-width: 375px) {
+    display: none;
+  }
 }
 
 .header__container-link:hover + .header__container-find,
@@ -80,11 +98,12 @@
 
 .header__nav {
   position: absolute;
-  top: 100%;
+  top: 75px;
   right: 0;
   background: white;
   display: none;
   width: 232px;
+  min-height: 764px;
 }
 
 .header__burger:hover + .header__nav,
@@ -130,20 +149,17 @@
   line-height: 17px;
   text-transform: uppercase;
 }
-nav > div > svg {
-  padding-left: 20%;
-}
 
 .header__menu-badge {
   display: inline-block;
   min-width: 10px;
-  padding: 0px 3px;
+  padding: 0 3px;
   border-radius: 50%;
   font-size: 9px;
   text-align: center;
   background: #f26376;
   color: #fff;
-  margin-left: -5px;
+  margin-left: -10px;
   position: absolute;
 }
 

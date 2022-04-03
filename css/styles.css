@@ -15,8 +15,7 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 17px;
-  max-width: 1600px; }
+  line-height: 17px; }
 
 .container {
   margin: 0 auto;
@@ -30,11 +29,16 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  min-height: 75px;
-  position: relative; }
+  min-height: 75px; }
 
 .header__container-logo {
   margin-right: 41px; }
+  @media (max-width: 768px) {
+    .header__container-logo {
+      margin-left: 32px; } }
+  @media (max-width: 375px) {
+    .header__container-logo {
+      margin-left: 16px; } }
 
 .header__container-link:hover .header__container-icon,
 .header__container-link:focus .header__container-icon {
@@ -48,7 +52,14 @@ body {
 
 .header__menu-list {
   align-items: center;
-  display: flex; }
+  display: flex;
+  margin-right: 10px; }
+  @media (max-width: 768px) {
+    .header__menu-list {
+      margin-right: 25px; } }
+  @media (max-width: 375px) {
+    .header__menu-list {
+      margin-right: 16px; } }
 
 .header__burger, .header__menu-title {
   background-color: transparent;
@@ -59,6 +70,10 @@ body {
   position: absolute;
   left: 120px;
   top: 30px; }
+
+@media (max-width: 375px) {
+  .menu-title-basket, .menu-title-person {
+    display: none; } }
 
 .header__container-link:hover + .header__container-find,
 .header__container-link:focus + .header__container-find {
@@ -72,11 +87,12 @@ body {
 
 .header__nav {
   position: absolute;
-  top: 100%;
+  top: 75px;
   right: 0;
   background: white;
   display: none;
-  width: 232px; }
+  width: 232px;
+  min-height: 764px; }
 
 .header__burger:hover + .header__nav,
 .header__burger:focus + .header__nav {
@@ -105,19 +121,16 @@ body {
   line-height: 17px;
   text-transform: uppercase; }
 
-nav > div > svg {
-  padding-left: 20%; }
-
 .header__menu-badge {
   display: inline-block;
   min-width: 10px;
-  padding: 0px 3px;
+  padding: 0 3px;
   border-radius: 50%;
   font-size: 9px;
   text-align: center;
   background: #f26376;
   color: #fff;
-  margin-left: -5px;
+  margin-left: -10px;
   position: absolute; }
 
 .header__icon {
@@ -137,11 +150,6 @@ nav > div > svg {
 .brand {
   display: flex;
   justify-content: center; }
-
-.brand__img {
-  max-width: 800px;
-  object-fit: cover;
-  width: calc(100%/2); }
 
 .brand__title-wpr {
   align-items: center;
@@ -423,67 +431,5 @@ nav > div > svg {
   left: -25px;
   background-image: url(../img/icons/check.svg);
   background-size: 15px 15px; }
-
-@media (max-width: 375px) {
-  .container {
-    margin: 0 auto;
-    max-width: 375px; }
-
-  .brand__img {
-    display: none; }
-
-  .brand__title-wpr {
-    padding: 148px 0;
-    width: 236px; }
-
-  .brand__title {
-    font-size: 38px;
-    line-height: 45px; }
-
-  .brand__title-lower {
-    display: block;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: bold; } }
-@media (max-width: 768px) {
-  .container {
-    margin: 0 auto;
-    max-width: 768px; }
-
-  .brand {
-    display: flex;
-    justify-content: space-between; }
-
-  .brand__title {
-    font-size: 44px;
-    line-height: 52px; }
-
-  .brand__title-lower {
-    display: block;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px; }
-
-  .brand__title-pink {
-    color: #f16d7f; }
-
-  .sales__item {
-    width: 323px; }
-
-  .sales__item--woman {
-    height: 168px;
-    width: 232px; }
-
-  .sales__item--man {
-    height: 168px;
-    width: 232px; }
-
-  .sales__item--kids {
-    height: 168px;
-    width: 232px; }
-
-  .sales__item--accessories {
-    max-height: 116px;
-    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
