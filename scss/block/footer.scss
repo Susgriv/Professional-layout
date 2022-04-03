@@ -25,6 +25,7 @@
     line-height: 24px;
     padding-top: 30px;
   }
+
   //form//
   &__form {
     text-align: center;
@@ -70,24 +71,28 @@
     gap: 7px;
   }
 }
+
 .footer__social-icon {
   fill: #ffffff;
   transition: all 1s ease .2s;
 }
+
 .social-icon__color {
   fill: #222222;
   transition: all 1s ease .2s;
 }
+
 .footer__social-link:hover .footer__social-icon,
-.footer__social-link:focus .footer__social-icon
- {
+.footer__social-link:focus .footer__social-icon {
   fill: #f26376;
   transition: all 1s ease .2s;
 }
+
 .footer__social-link:hover .social-icon__color,
 .footer__social-link:focus .social-icon__color {
   fill: white;
 }
+
 .footer__social-link:active .footer__social-icon,
 .footer__social-link:focus .social-icon__color {
   opacity: .7;

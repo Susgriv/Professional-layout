@@ -1,0 +1,13 @@
+.breadcrumbs {
+  background: $registration-bkg;
+
+  &__wrp {
+
+  }
+
+  &__title {
+    padding: 60px 0;
+    text-transform: uppercase;
+    color: $brand-pink;
+  }
+}

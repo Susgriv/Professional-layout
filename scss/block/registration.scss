@@ -1,0 +1,19 @@
+.block {
+  display: flex;
+}
+.item {
+  position: relative;
+  margin-left: 25px;
+}
+
+.item:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  background-image: url(../img/icons/check.svg);
+  background-size: 15px 15px;
+}

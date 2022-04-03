@@ -2,15 +2,34 @@
   background-color: $black-bkg;
 }
 
+.header__container {
+
+}
+
 .header__wrp {
   align-items: center;
   display: flex;
   justify-content: space-between;
   min-height: 75px;
+  position: relative;
+
 }
 
-.header__logo {
+.header__container-logo {
   margin-right: 41px;
+}
+
+.header__container-link:hover .header__container-icon,
+.header__container-link:focus .header__container-icon, {
+  fill: #f26376;
+}
+
+.header__container-link:active .header__container-icon {
+  opacity: 0.8;
+}
+
+.header__container-icon {
+  fill: $sales-text;
 }
 
 .header__menu-list {
@@ -23,12 +42,96 @@
   border: none;
 }
 
+.header__container-find {
+  display: none;
+  position: absolute;
+  left: 120px;
+  top: 30px;
+}
+
+.header__container-link:hover + .header__container-find,
+.header__container-link:focus + .header__container-find {
+  display: block;
+}
+
+.header__container-find:hover {
+  display: block;
+}
+
 .header-link {
   margin-left: 33px;
 }
 
-.header__nav {
-  display: none;
+//.header__nav {
+//  display: none;
+//  background-color: #f8f3f4;
+//}
+//
+//.wrp {
+//  display: none;
+// }
+//
+//.display-block {
+//  display: block;
+//  position: absolute;
+//  top: 75px;
+//  left: 95%;
+//}
+
+//.header__nav {
+//  position: absolute;
+//  top: 100%;
+//  right: 0;
+//  background: white;
+//  display: none;
+//  width: 232px;
+//}
+//
+//.header__burger:hover + .header__nav,
+//.header__burger:focus + .header__nav {
+//  display: block;
+//}
+//
+//.header__nav:hover {
+//  display: block;
+//}
+
+.header__nav-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: $black;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+
+.header__nav-list {
+}
+
+.header__nav-item {
+}
+
+.nav-item {
+}
+
+.nav-item-list {
+}
+
+.nav-item__item {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  padding-bottom: 11px;
+}
+
+.nav-item-title {
+  color: #f16d7f;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+nav > div > svg {
+  padding-left: 20%;
 }
 
 .header__menu-badge {
@@ -39,13 +142,13 @@
   font-size: 9px;
   text-align: center;
   background: #f26376;
-  color: white;
+  color: #fff;
   margin-left: -5px;
   position: absolute;
 }
 
 .header__icon {
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .header__burger:hover .header__icon,
@@ -57,9 +160,9 @@
 
 }
 
-.header-burger:active .header__icon,
+.header__burger:active .header__icon,
 .header-link:active .header__icon {
-  opacity: .9;
+  opacity: 0.8;
 }
 
 
