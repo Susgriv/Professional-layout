@@ -70,6 +70,21 @@ body {
 .header-link {
   margin-left: 33px; }
 
+.header__nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  display: none;
+  width: 232px; }
+
+.header__burger:hover + .header__nav,
+.header__burger:focus + .header__nav {
+  display: block; }
+
+.header__nav:hover {
+  display: block; }
+
 .header__nav-title {
   font-weight: 700;
   font-size: 14px;
