@@ -1,12 +1,29 @@
-.block {
-  display: flex;
+.registration {
+  display: grid;
+  grid-template-columns: 4fr 1fr 7fr;
 }
-.item {
+
+.registration__form-wrapper {
+  //width: 41.6666667%;
+
+}
+
+.registration__form {
+ //max-width: 360px;
+
+}
+.registration__content {
+  //width: 58.33333%;
+  padding-right: 10px;
+}
+
+.registration__content-list {}
+.registration__content-item {
   position: relative;
   margin-left: 25px;
 }
 
-.item:before {
+.registration__content-item:before {
   content: '';
   width: 15px;
   height: 15px;

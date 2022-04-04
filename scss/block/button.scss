@@ -4,6 +4,9 @@
   margin-top: 49px;
   padding: 14px 39px;
   transition: all .3s ease .2s;
+  background: $sales-text;
+  border: 1px solid $button;
+  color: $button-text;
 
   &:hover,
   &:focus {
@@ -14,10 +17,4 @@
   &:active {
     opacity: .5;
   }
-}
-
-.products__button {
-  background: $sales-text;
-  border: 1px solid $button;
-  color: $button-text;
 }

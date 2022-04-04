@@ -19,7 +19,7 @@
     margin-left: 32px;
   }
   @media (max-width: 375px) {
-   margin-left: 16px;
+    margin-left: 16px;
   }
 }
 
@@ -57,10 +57,10 @@
 
 .header__container-find {
   display: none;
-  position: absolute;
-  left: 120px;
-  top: 30px;
+  float: right;
+  margin: 10px 0 0 10px;
 }
+
 .menu-title-basket, .menu-title-person {
   @media (max-width: 375px) {
     display: none;
@@ -79,22 +79,6 @@
 .header-link {
   margin-left: 33px;
 }
-
-//.header__nav {
-//  display: none;
-//  background-color: #f8f3f4;
-//}
-//
-//.wrp {
-//  display: none;
-// }
-//
-//.display-block {
-//  display: block;
-//  position: absolute;
-//  top: 75px;
-//  left: 95%;
-//}
 
 .header__nav {
   position: absolute;
@@ -181,6 +165,11 @@
   opacity: 0.8;
 }
 
+.header__nav-close-button {
+  margin: 16px;
+  background-color: transparent;
+  border: none;
+}
 
 
 
