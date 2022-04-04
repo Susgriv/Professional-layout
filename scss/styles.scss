@@ -1,15 +1,18 @@
-@import "css.scss";
-@import "variables.scss";
-@import "block/header.scss";
-@import "block/brand.scss";
-@import "block/sales.scss";
-@import "block/products.scss";
-@import "block/advantages.scss";
-@import "block/button.scss";
-@import "block/footer.scss";
+@import "variables";
+@import "general";
+@import "reset";
+
+
+@import "block/header";
+@import "block/brand";
+@import "block/sales";
+@import "block/products";
+@import "block/advantages";
+@import "block/button";
+@import "block/footer";
 @import "block/page_title";
-@import "block/registration.scss";
-@import "block/card.scss";
-@import "block/form.scss";
-@import "media/screen375.scss";
-@import "media/screen768.scss";
+@import "block/registration";
+@import "block/card";
+@import "block/form";
+@import "media/screen375";
+@import "media/screen768";

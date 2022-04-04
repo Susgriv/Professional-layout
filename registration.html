@@ -2,14 +2,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <!--    подключение @media-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Registration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Yomogi&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="scss/reset.scss">
     <link rel="stylesheet" href="css/styles.css">
 <body>
 <header class="header">
@@ -169,11 +169,10 @@
             </ul>
         </div>
     </section>
-
 </main>
 <footer class="footer">
     <div class="footer__wrap">
-        <div class="container footer__quote-wrap">
+        <div class="container footer-quote__wrap">
             <div class="footer__quote-list">
                 <img class="footer__quote-img" src="img/footer/footer.png" alt="footer.png">
                 <p class="footer__quote-text">&ldquo;Vestibulum quis porttitor dui! Quisque viverra nunc mi, <em>a
@@ -185,8 +184,7 @@
                 <h2 class="footer__form-title">subscribe</h2>
                 <p class="footer__form-text">for our newletter and promotion</p>
                 <label class="footer__form-label form-label visually-hidden">email</label>
-                <input class="form-label__email" type="email" placeholder="Enter Your Email">
-                <button class="button footer__form-button" type="button">Subscribe</button>
+                <input class="footer__form-email" type="email" placeholder="Enter Your Email"><button class="button footer__form-button" type="button">subscribe</button>
             </form>
         </div>
     </div>
@@ -226,7 +224,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="footer__social-icon">
+                <li class="footer__social-item">
                     <a class="footer__social-link" href="#">
                         <svg class="footer__social-icon social-icon" width="32" height="32" viewBox="0 0 32 32"
                              xmlns="http://www.w3.org/2000/svg">
