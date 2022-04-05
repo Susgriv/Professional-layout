@@ -7,19 +7,32 @@ fieldset {
 }
 
 .form__legend {
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.form__legend_login {
+
 }
 
 .form__label {
+  padding-bottom: 20px;
 }
 
 .form__input {
   width: 100%;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .visually-hidden {
 }
 
 .form__radio {
+
 }
 
 .form__input-email {
@@ -29,7 +42,38 @@ fieldset {
 }
 
 .form__text {
+  padding-top: 15px;
 }
 
 .form__button {
+  margin-top: 39px;
+  text-transform: uppercase;
+}
+
+.form__label_radio {
+  padding: 31px 0;
+}
+
+.button {
+  background: $pink-color;
+  border: 1px solid $pink-color;
+  color: $white-color;
+
+  &:hover,
+  &:focus {
+    background: $white-color;
+    color: $pink-color;
+    transition: all .3s ease .2s;
+  }
+}
+
+.form__button-img_color {
+  fill: $white-color;
+  transition: all .3s ease .2s;
+}
+
+.form__button:hover .form__button-img_color,
+.form__button:focus .form__button-img_color {
+  fill: $pink-color;
+  transition: all .3s ease .2s;
 }

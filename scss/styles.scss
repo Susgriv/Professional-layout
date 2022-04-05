@@ -1,8 +1,7 @@
 @import "variables";
+@import "mixins";
 @import "general";
 @import "reset";
-
-
 @import "block/header";
 @import "block/brand";
 @import "block/sales";
@@ -10,6 +9,7 @@
 @import "block/advantages";
 @import "block/button";
 @import "block/footer";
+@import "block/social-icon";
 @import "block/page_title";
 @import "block/registration";
 @import "block/card";

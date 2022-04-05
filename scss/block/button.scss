@@ -4,14 +4,14 @@
   margin-top: 49px;
   padding: 14px 39px;
   transition: all .3s ease .2s;
-  background: $sales-text;
-  border: 1px solid $button;
-  color: $button-text;
+  background: $white-color;
+  border: 1px solid $pink-color;
+  color: $pink-color;
 
   &:hover,
   &:focus {
-    background: $button-text;
-    color: $sales-text;
+    background: $pink-color;
+    color: $white-color;
     transition: all .3s ease .2s;
   }
   &:active {

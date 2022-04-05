@@ -25,7 +25,7 @@
 
 .header__container-link:hover .header__container-icon,
 .header__container-link:focus .header__container-icon, {
-  fill: #f26376;
+  fill: $pink-color;
 }
 
 .header__container-link:active .header__container-icon {
@@ -33,7 +33,7 @@
 }
 
 .header__container-icon {
-  fill: $sales-text;
+  fill: $white-color;
 }
 
 .header__menu-list {
@@ -128,7 +128,7 @@
 }
 
 .nav-item-title {
-  color: #f16d7f;
+  color: $pink-color;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
@@ -137,25 +137,25 @@
 .header__menu-badge {
   display: inline-block;
   min-width: 10px;
-  padding: 0 3px;
+  padding: 2px 2px;
   border-radius: 50%;
-  font-size: 9px;
+  font-size: 8px;
   text-align: center;
-  background: #f26376;
-  color: #fff;
+  background: $pink-color;
+  color: $white-color;
   margin-left: -10px;
   position: absolute;
 }
 
 .header__icon {
-  fill: #fff;
+  fill: $white-color;
 }
 
 .header__burger:hover .header__icon,
 .header__burger:focus .header__icon,
 .header-link:hover .header__icon,
 .header-link:hover .header__icon, {
-  fill: #f26376;
+  fill: $pink-color;
   cursor: pointer;
 
 }

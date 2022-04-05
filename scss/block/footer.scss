@@ -5,13 +5,9 @@
   }
 
   .footer-quote__wrap {
-    //align-items: center;
-    //display: flex;
-    //justify-content: space-between;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 220px;
+    grid-template: 1fr / 1fr 1fr;
+
   }
 
   &__quote-list {
@@ -33,43 +29,54 @@
 
   //form//
   &__form {
+    max-width: 360px;
     text-align: center;
-    width: 360px;
-    padding: 165px 0 40px 0;
-  }
+    padding: 97px 0 140px 0;
 
-  &__form-title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 40px;
-    text-transform: uppercase;
-  }
 
-  &__form-text {
-    font-size: 18px;
-    line-height: 24px;
-    padding-bottom: 27px;
-  }
+    &-title {
+      padding-top: 65px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 40px;
+      text-transform: uppercase;
+    }
 
-  .footer__form-email {
-    border-top-left-radius: 100px 100px;
-    border-bottom-left-radius: 100px 100px;
-    height: 40px;
-    border: none;
-    background-color: #e1e1e1;
-    padding: 7px 0 5px 22px;
-  }
+    &-text {
+      font-size: 18px;
+      line-height: 24px;
+      padding-bottom: 32px;
+      text-transform: uppercase;
+    }
 
-  .footer__form-button {
-    margin-top: 0;
-    width: 100px;
-    height: 52px;
-    padding: 7px;
-    border-top-right-radius: 100px 100px;
-    border-bottom-right-radius: 100px 100px;
-    text-transform: capitalize;
-  }
+    &-email {
+      border-top-left-radius: 100px 100px;
+      border-bottom-left-radius: 100px 100px;
+      width: 230px;
+      height: 37px;
+      border: none;
+      background-color: #e1e1e1;
+      padding: 7px 0 5px 22px;
+      @include font(14px, 400, 16px);
+    }
 
+    &-email:hover,
+    &-email:focus {
+      background-color: $white-color;
+      transition: all .3s ease .2s;
+    }
+      &-button {
+      margin-top: 0;
+      margin-left: -5px;
+      width: 100px;
+      height: 49px;
+      padding: 7px;
+      border-top-right-radius: 100px 100px;
+      border-bottom-right-radius: 100px 100px;
+      text-transform: capitalize;
+      @include font(14px, 400, 16px);
+    }
+  }
 
   ///social///
   &__wrp-social {
@@ -81,44 +88,34 @@
     display: flex;
     justify-content: space-between;
     min-height: 79px;
+
+    &-copy {
+      color: $adventages-title;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    &-list {
+      align-items: center;
+      display: flex;
+      gap: 7px;
+    }
+
+    &-link:hover &-icon,
+    &-link:focus &-icon {
+      fill: $pink-color;
+      transition: all 1s ease .2s;
+    }
+
+    &-link:hover .social-icon__color,
+    &-link:focus .social-icon__color {
+      fill: white;
+    }
+
+    &-link:active &-icon,
+    &-link:focus .social-icon__color {
+      opacity: .7;
+    }
   }
-
-  &__social-copy {
-    color: $adventages-title;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-  }
-
-  &__social-list {
-    align-items: center;
-    display: flex;
-    gap: 7px;
-  }
-}
-
-.footer__social-icon {
-  fill: #ffffff;
-  transition: all 1s ease .2s;
-}
-
-.social-icon__color {
-  fill: #222222;
-  transition: all 1s ease .2s;
-}
-
-.footer__social-link:hover .footer__social-icon,
-.footer__social-link:focus .footer__social-icon {
-  fill: #f26376;
-  transition: all 1s ease .2s;
-}
-
-.footer__social-link:hover .social-icon__color,
-.footer__social-link:focus .social-icon__color {
-  fill: white;
-}
-
-.footer__social-link:active .footer__social-icon,
-.footer__social-link:focus .social-icon__color {
-  opacity: .7;
 }
