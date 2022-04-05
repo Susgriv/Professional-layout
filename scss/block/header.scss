@@ -80,71 +80,22 @@
   margin-left: 33px;
 }
 
-.header__nav {
-  position: absolute;
-  top: 75px;
-  right: 0;
-  background: white;
-  display: none;
-  width: 232px;
-  min-height: 764px;
-}
-
 .header__burger:hover + .header__nav,
 .header__burger:focus + .header__nav {
   display: block;
 }
 
-.header__nav:hover {
-  display: block;
-}
-
-.header__nav-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: $black;
-  text-transform: uppercase;
-  padding-bottom: 12px;
-}
-
-.header__nav-list {
-}
-
-.header__nav-item {
-}
-
-.nav-item {
-}
-
-.nav-item-list {
-}
-
-.nav-item__item {
-  font-size: 14px;
-  line-height: 17px;
-  color: #6f6e6e;
-  padding-bottom: 11px;
-}
-
-.nav-item-title {
-  color: $pink-color;
-  font-size: 14px;
-  line-height: 17px;
-  text-transform: uppercase;
-}
-
 .header__menu-badge {
-  display: inline-block;
-  min-width: 10px;
-  padding: 2px 2px;
-  border-radius: 50%;
-  font-size: 8px;
-  text-align: center;
   background: $pink-color;
+  border-radius: 50%;
   color: $white-color;
+  display: inline-block;
+  font-size: 8px;
   margin-left: -10px;
+  min-width: 12px;
+  padding: 3px 2px;
   position: absolute;
+  text-align: center;
 }
 
 .header__icon {
@@ -155,20 +106,13 @@
 .header__burger:focus .header__icon,
 .header-link:hover .header__icon,
 .header-link:hover .header__icon, {
-  fill: $pink-color;
   cursor: pointer;
-
+  fill: $pink-color;
 }
 
 .header__burger:active .header__icon,
 .header-link:active .header__icon {
   opacity: 0.8;
-}
-
-.header__nav-close-button {
-  margin: 16px;
-  background-color: transparent;
-  border: none;
 }
 
 

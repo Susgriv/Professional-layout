@@ -126,53 +126,21 @@ table {
 .header-link {
   margin-left: 33px; }
 
-.header__nav {
-  position: absolute;
-  top: 75px;
-  right: 0;
-  background: white;
-  display: none;
-  width: 232px;
-  min-height: 764px; }
-
 .header__burger:hover + .header__nav,
 .header__burger:focus + .header__nav {
   display: block; }
 
-.header__nav:hover {
-  display: block; }
-
-.header__nav-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000;
-  text-transform: uppercase;
-  padding-bottom: 12px; }
-
-.nav-item__item {
-  font-size: 14px;
-  line-height: 17px;
-  color: #6f6e6e;
-  padding-bottom: 11px; }
-
-.nav-item-title {
-  color: #f26376;
-  font-size: 14px;
-  line-height: 17px;
-  text-transform: uppercase; }
-
 .header__menu-badge {
-  display: inline-block;
-  min-width: 10px;
-  padding: 2px 2px;
-  border-radius: 50%;
-  font-size: 8px;
-  text-align: center;
   background: #f26376;
+  border-radius: 50%;
   color: #fff;
+  display: inline-block;
+  font-size: 8px;
   margin-left: -10px;
-  position: absolute; }
+  min-width: 12px;
+  padding: 3px 2px;
+  position: absolute;
+  text-align: center; }
 
 .header__icon {
   fill: #fff; }
@@ -181,17 +149,56 @@ table {
 .header__burger:focus .header__icon,
 .header-link:hover .header__icon,
 .header-link:hover .header__icon {
-  fill: #f26376;
-  cursor: pointer; }
+  cursor: pointer;
+  fill: #f26376; }
 
 .header__burger:active .header__icon,
 .header-link:active .header__icon {
   opacity: 0.8; }
 
-.header__nav-close-button {
-  margin: 16px;
-  background-color: transparent;
-  border: none; }
+.header__nav {
+  background: #fff;
+  box-shadow: -5px 5px 10px rgba(7, 7, 7, 0.5);
+  display: none;
+  min-height: 764px;
+  position: absolute;
+  right: 0;
+  top: 75px;
+  width: 232px;
+  z-index: 999;
+  padding: 37px 0 0 33px; }
+  .header__nav-title {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    padding-bottom: 4px;
+    text-transform: uppercase; }
+  .header__nav-close-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 16px;
+    right: 16px; }
+
+.header__nav:hover {
+  display: block; }
+
+.nav-item__item {
+  color: #6f6e6e;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 11px; }
+.nav-item__item_link {
+  font-size: 14px;
+  color: #5d5d5d;
+  text-decoration: none; }
+.nav-item-title {
+  color: #f26376;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin-top: 20px; }
 
 .brand {
   display: grid;
@@ -268,7 +275,7 @@ table {
     font-size: 30px;
     line-height: 36px; }
   .products__sub-title {
-    color: #5D5D5D;
+    color: #5d5d5d;
     font-size: 14px;
     line-height: 17px;
     margin-top: 6px; }
@@ -385,8 +392,8 @@ table {
   grid-template: 1fr / 1fr 1fr; }
 .footer__quote-list {
   max-width: 360px;
-  text-align: center;
-  padding: 97px 0 140px 0; }
+  padding: 97px 0 140px 0;
+  text-align: center; }
 .footer__quote-img {
   padding-top: 10px; }
 .footer__quote-text {
@@ -395,14 +402,15 @@ table {
   line-height: 24px;
   padding-top: 30px; }
 .footer__form {
+  margin: 0 auto;
   max-width: 360px;
-  text-align: center;
-  padding: 97px 0 140px 0; }
+  padding: 97px 0 140px 0;
+  text-align: center; }
   .footer__form-title {
-    padding-top: 65px;
     font-size: 24px;
     font-weight: 700;
     line-height: 40px;
+    padding-top: 65px;
     text-transform: uppercase; }
   .footer__form-text {
     font-size: 18px;
@@ -410,31 +418,33 @@ table {
     padding-bottom: 32px;
     text-transform: uppercase; }
   .footer__form-email {
-    border-top-left-radius: 100px 100px;
-    border-bottom-left-radius: 100px 100px;
-    width: 230px;
-    height: 37px;
-    border: none;
     background-color: #e1e1e1;
+    border: none;
+    display: block;
+    float: left;
+    height: 37px;
     padding: 7px 0 5px 22px;
+    width: 230px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 16px; }
+    line-height: 16px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px; }
   .footer__form-email:hover, .footer__form-email:focus {
     background-color: #fff;
     transition: all .3s ease .2s; }
   .footer__form-button {
-    margin-top: 0;
-    margin-left: -5px;
-    width: 100px;
+    float: left;
     height: 49px;
+    margin-top: 0;
     padding: 7px;
-    border-top-right-radius: 100px 100px;
-    border-bottom-right-radius: 100px 100px;
     text-transform: capitalize;
+    width: 100px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 16px; }
+    line-height: 16px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px; }
 .footer__wrp-social {
   background-color: #222; }
 .footer__social {
@@ -455,7 +465,7 @@ table {
     fill: #f26376;
     transition: all 1s ease .2s; }
   .footer__social-link:hover .social-icon__color, .footer__social-link:focus .social-icon__color {
-    fill: white; }
+    fill: #fff; }
   .footer__social-link:active .footer__social-icon, .footer__social-link:focus .social-icon__color {
     opacity: .7; }
 
@@ -476,60 +486,144 @@ table {
 .registration {
   display: grid;
   grid-template-columns: 4fr 1fr 8fr;
-  padding-top: 64px;
-  padding-bottom: 96px; }
+  padding-bottom: 96px;
+  padding-top: 64px; }
 
 .registration__content {
-  padding-right: 10px;
   font-size: 24px;
   font-weight: 300;
-  line-height: 29px; }
+  line-height: 29px;
+  padding-right: 10px; }
 
 .registration__content-header {
+  font-weight: 300;
   padding-bottom: 22px;
-  text-transform: uppercase;
-  font-weight: 300; }
+  text-transform: uppercase; }
 
 .registration__content-text {
   padding-bottom: 21px; }
 
 .registration__content-item {
-  position: relative;
   margin-left: 25px;
-  padding-bottom: 16px; }
+  padding-bottom: 16px;
+  position: relative; }
 
 .registration__content-item:before {
-  content: '';
-  width: 15px;
-  height: 15px;
   background: transparent;
+  background-image: url(../img/icons/check.svg);
+  background-size: 15px 15px;
+  content: '';
+  height: 15px;
+  left: -25px;
   position: absolute;
   top: 5px;
-  left: -25px;
-  background-image: url(../img/icons/check.svg);
-  background-size: 15px 15px; }
+  width: 15px; }
+
+.cart__wrapper {
+  display: grid;
+  grid-template: 1fr / 1.3fr 1fr;
+  margin-top: 96px;
+  margin-bottom: 128px; }
+
+.cart__list {
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  display: grid;
+  grid-template: 1fr / 262px 1fr;
+  margin-bottom: 40px; }
+
+.cart__item-inner {
+  position: relative; }
+
+.cart__item-img {
+  width: 100%;
+  height: auto; }
+
+.item-inner__wrp {
+  margin-left: 31px;
+  margin-top: 22px;
+  width: 50%; }
+
+.item-inner-title {
+  color: #222;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase; }
+
+.item-inner__list {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 42px 0 45px 32px; }
+
+.item-inner__item {
+  padding-bottom: 6px; }
+
+.item-inner__item-red {
+  color: #f26376; }
+
+.item-inner__item-gray {
+  color: #5d5d5d; }
+
+[type="number"] {
+  height: 25px;
+  width: 44px;
+  margin-left: 25px; }
+
+.item-inner_button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 22px;
+  top: 28px; }
+
+.cart__button-wrp {
+  display: flex;
+  justify-content: space-between; }
+
+.cart__button-wrp .cart__button {
+  background-color: transparent;
+  border: 1px solid #5d5d5d;
+  color: #5d5d5d; }
+
+.cart__form {
+  margin-left: 128px; }
+
+.form__label .form__input {
+  box-sizing: border-box; }
 
 fieldset {
   display: flex;
   flex-direction: column; }
 
 .form__legend {
-  padding-bottom: 20px;
-  font-weight: 300;
   font-size: 16px;
-  line-height: 19px; }
+  font-weight: 300;
+  line-height: 19px;
+  padding-bottom: 20px; }
 
 .form__label {
   padding-bottom: 20px; }
 
 .form__input {
-  width: 100%;
-  font-weight: 300;
   font-size: 13px;
-  line-height: 16px; }
+  font-weight: 300;
+  line-height: 16px;
+  padding: 13px 0 16px 17px;
+  width: 100%; }
+
+.form__radio {
+  margin-right: 10px; }
+
+.form__radio-label {
+  margin-right: 20px;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px; }
 
 .form__text {
-  padding-top: 15px; }
+  padding-top: 15px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px; }
 
 .form__button {
   margin-top: 39px;

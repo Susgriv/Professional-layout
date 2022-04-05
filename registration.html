@@ -119,8 +119,12 @@
                         <span class="visually-hidden">Last Name</span>
                     </label>
                     <label class="form__label_radio">
-                        <input class="form__radio" type="radio" tabindex="3" name="gender" value="male" checked>Male
-                        <input class="form__radio" type="radio" tabindex="3" name="gender" value="female">Female
+                        <input class="form__radio" type="radio" id="radio-male" tabindex="3" name="gender" value="male" checked>
+                        <label class="form__radio-label" for="radio-male">Male</label>
+                        <input class="form__radio" type="radio" id="radio-female" tabindex="3" name="gender" value="female">
+                        <label class="form__radio-label" for="radio-female">Female</label>
+                        <input class="form__radio" type="radio" id="radio-other" tabindex="3" name="gender" value="other">
+                        <label class="form__radio-label" for="radio-other">Other</label>
                         <span class="visually-hidden">Gender</span>
                     </label>
                 </fieldset>
