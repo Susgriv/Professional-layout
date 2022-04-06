@@ -1,0 +1,122 @@
+.cart__wrapper {
+  display: grid;
+  grid-template: 1fr / 1.3fr 1fr;
+  margin-top: 96px;
+  margin-bottom: 128px;
+}
+
+.cart__wrp {
+
+}
+
+.cart__list {
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  display: grid;
+  grid-template: 1fr / 262px 1fr;
+  margin-bottom: 40px;
+}
+
+.cart__item-inner {
+  position: relative;
+}
+
+.cart__item-img {
+  width: 100%;
+  height: auto;
+}
+
+.item-inner {
+}
+
+.item-inner__wrp {
+  margin-left: 31px;
+  margin-top: 22px;
+  width: 50%;
+}
+
+.item-inner-title {
+  color: $black-bkg;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.item-inner__list {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 42px 0 45px 32px;
+}
+
+.item-inner__item {
+  padding-bottom: 6px;
+}
+
+.item-inner__item-red {
+  color: $pink-color;
+}
+
+.item-inner__item-gray {
+  color: $color-text
+}
+
+[type="number"] {
+  height: 25px;
+  width: 44px;
+  margin-left: 25px;
+}
+
+.item-inner_button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 22px;
+  top: 28px;
+}
+
+.cart__button-wrp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__button-wrp .cart__button {
+  background-color: transparent;
+  border: 1px solid $color-text;
+  color: $color-text;
+}
+
+///###form###///
+.cart__form {
+  margin-left: 128px;
+}
+
+.form {
+}
+
+.form__legend {
+}
+
+.form__label {
+}
+
+.form__label .form__input {
+  box-sizing: border-box;
+
+}
+
+.visually-hidden {
+}
+
+.button {
+}
+
+.form__button {
+}
+
+.form__button-img {
+}
+
+.form__button-img_color {
+}
+
+.wpr_total {
+}

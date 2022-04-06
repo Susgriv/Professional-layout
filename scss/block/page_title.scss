@@ -1,0 +1,13 @@
+.page-title {
+  background: $pink-bkg;
+
+  &__wrapper {
+
+  }
+
+  &__title {
+    padding: 60px 0;
+    text-transform: uppercase;
+    color: $pink-color;
+  }
+}

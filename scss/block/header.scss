@@ -2,6 +2,10 @@
   background-color: $black-bkg;
 }
 
+.header__container {
+
+}
+
 .header__wrp {
   align-items: center;
   display: flex;
@@ -9,13 +13,41 @@
   min-height: 75px;
 }
 
-.header__logo {
+.header__container-logo {
   margin-right: 41px;
+  @media (max-width: 768px) {
+    margin-left: 32px;
+  }
+  @media (max-width: 375px) {
+    margin-left: 16px;
+  }
+}
+
+.header__container-link:hover .header__container-icon,
+.header__container-link:focus .header__container-icon, {
+  fill: $pink-color;
+}
+
+.header__container-link:active .header__container-icon {
+  opacity: 0.8;
+}
+
+.header__container-icon {
+  fill: $white-color;
 }
 
 .header__menu-list {
   align-items: center;
   display: flex;
+  margin-right: 10px;
+
+  @media (max-width: 768px) {
+    margin-right: 25px;
+  }
+  @media (max-width: 375px) {
+    margin-right: 16px;
+  }
+
 }
 
 .header__burger, .header__menu-title {
@@ -23,45 +55,65 @@
   border: none;
 }
 
+.header__container-find {
+  display: none;
+  float: right;
+  margin: 10px 0 0 10px;
+}
+
+.menu-title-basket, .menu-title-person {
+  @media (max-width: 375px) {
+    display: none;
+  }
+}
+
+.header__container-link:hover + .header__container-find,
+.header__container-link:focus + .header__container-find {
+  display: block;
+}
+
+.header__container-find:hover {
+  display: block;
+}
+
 .header-link {
   margin-left: 33px;
 }
 
-.header__nav {
-  display: none;
+.header__burger:hover + .header__nav,
+.header__burger:focus + .header__nav {
+  display: block;
 }
 
 .header__menu-badge {
-  display: inline-block;
-  min-width: 10px;
-  padding: 0px 3px;
+  background: $pink-color;
   border-radius: 50%;
-  font-size: 9px;
-  text-align: center;
-  background: #f26376;
-  color: white;
-  margin-left: -5px;
+  color: $white-color;
+  display: inline-block;
+  font-size: 8px;
+  margin-left: -10px;
+  min-width: 12px;
+  padding: 3px 2px;
   position: absolute;
+  text-align: center;
 }
 
 .header__icon {
-  fill: #ffffff;
+  fill: $white-color;
 }
 
 .header__burger:hover .header__icon,
 .header__burger:focus .header__icon,
 .header-link:hover .header__icon,
 .header-link:hover .header__icon, {
-  fill: #f26376;
   cursor: pointer;
-
+  fill: $pink-color;
 }
 
-.header-burger:active .header__icon,
+.header__burger:active .header__icon,
 .header-link:active .header__icon {
-  opacity: .9;
+  opacity: 0.8;
 }
-
 
 
 
