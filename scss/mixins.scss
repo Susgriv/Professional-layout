@@ -24,3 +24,6 @@
   border-top-right-radius: $topRight;
   border-bottom-right-radius: $bottRight;
 }
+@mixin sale-bkg-img () {
+  background-repeat: no-repeat;
+}
