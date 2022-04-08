@@ -207,46 +207,46 @@ table {
       .brand__title-wpr {
         padding: 148px 56px 149px 83px;
         justify-content: center; } }
-    .brand__title-wpr__title {
-      border-left: 12px #f26376 solid;
-      padding-left: 16px;
-      text-transform: uppercase;
-      font-size: 48px;
-      font-weight: 900;
-      line-height: 58px;
+  .brand__title {
+    border-left: 12px #f26376 solid;
+    padding-left: 16px;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    font-style: normal; }
+    @media (max-width: 1000px) {
+      .brand__title {
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 53px;
+        font-style: normal; } }
+    @media (max-width: 767px) {
+      .brand__title {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 46px;
+        font-style: normal; } }
+    .brand__title-lower {
+      display: block;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 38px;
       font-style: normal; }
       @media (max-width: 1000px) {
-        .brand__title-wpr__title {
-          font-size: 44px;
-          font-weight: 900;
-          line-height: 53px;
+        .brand__title-lower {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 29px;
           font-style: normal; } }
       @media (max-width: 767px) {
-        .brand__title-wpr__title {
-          font-size: 38px;
-          font-weight: 900;
-          line-height: 46px;
+        .brand__title-lower {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
           font-style: normal; } }
-      .brand__title-wpr__title-lower {
-        display: block;
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 38px;
-        font-style: normal; }
-        @media (max-width: 1000px) {
-          .brand__title-wpr__title-lower {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 29px;
-            font-style: normal; } }
-        @media (max-width: 767px) {
-          .brand__title-wpr__title-lower {
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 24px;
-            font-style: normal; } }
-      .brand__title-wpr__title-pink {
-        color: #f26376; }
+    .brand__title-pink {
+      color: #f26376; }
 
 .sales {
   margin-top: 65px; }

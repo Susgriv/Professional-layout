@@ -28,33 +28,33 @@
       padding: 148px 56px 149px 83px;
       justify-content: center;
     }
+  }
 
-    &__title {
-      border-left: 12px $pink-color solid;
-      padding-left: 16px;
-      text-transform: uppercase;
-      @include font(48px, 58px, 900);
+  &__title {
+    border-left: 12px $pink-color solid;
+    padding-left: 16px;
+    text-transform: uppercase;
+    @include font(48px, 58px, 900);
+    @media (max-width: $laptop-width) {
+      @include font(44px, 53px, 900);
+    }
+    @media (max-width: $tables-width) {
+      @include font(38px, 46px, 900);
+    }
+
+    &-lower {
+      display: block;
+      @include font(32px, 38px, 700);
       @media (max-width: $laptop-width) {
-        @include font(44px, 53px, 900);
+        @include font(24px, 29px, 700);
       }
       @media (max-width: $tables-width) {
-        @include font(38px, 46px, 900);
+        @include font(20px, 24px, 700);
       }
+    }
 
-      &-lower {
-        display: block;
-        @include font(32px, 38px, 700);
-        @media (max-width: $laptop-width) {
-          @include font(24px, 29px, 700);
-        }
-        @media (max-width: $tables-width) {
-          @include font(20px, 24px, 700);
-        }
-      }
-
-      &-pink {
-        color: $pink-color;
-      }
+    &-pink {
+      color: $pink-color;
     }
   }
 }
