@@ -4,36 +4,47 @@
     background-size: cover;
   }
 
-  .footer-quote__wrap {
+  &__quote {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
+    @media (max-width: $tables-width) {
+      grid-template: 1fr 1fr / 1fr;
+      justify-items: center;
+    }
 
+    &-list {
+      max-width: 360px;
+      padding: 97px 0 140px 0;
+      text-align: center;
+      @media (max-width: $tables-width) {
+        padding: 54px 0 30px 0;
+      }
+    }
+
+    &-img {
+      padding-top: 10px;
+    }
+
+    &-text {
+      font-size: 20px;
+      font-style: italic;
+      line-height: 24px;
+      padding-top: 30px;
+      @media (max-width: $tables-width) {
+        @include font(18px, 22px)
+      }
+    }
   }
 
-  &__quote-list {
-    max-width: 360px;
-    padding: 97px 0 140px 0;
-    text-align: center;
-  }
-
-  &__quote-img {
-    padding-top: 10px;
-  }
-
-  &__quote-text {
-    font-size: 20px;
-    font-style: italic;
-    line-height: 24px;
-    padding-top: 30px;
-  }
-
-  //form//
-  &__form {
+  //###form###//
+  .footer__form {
     margin: 0 auto;
     max-width: 360px;
     padding: 97px 0 140px 0;
     text-align: center;
-
+    @media (max-width: $tables-width) {
+      padding: 30px 0 39px 0;
+    }
 
     &-title {
       font-size: 24px;
@@ -41,6 +52,9 @@
       line-height: 40px;
       padding-top: 65px;
       text-transform: uppercase;
+      @media (max-width: $tables-width) {
+        @include font(24px, 37px)
+      }
     }
 
     &-text {
@@ -48,6 +62,9 @@
       line-height: 24px;
       padding-bottom: 32px;
       text-transform: uppercase;
+      @media (max-width: $tables-width) {
+        @include font(14px, 22px)
+      }
     }
 
     &-email {
@@ -58,7 +75,7 @@
       height: 37px;
       padding: 7px 0 5px 22px;
       width: 230px;
-      @include font(14px, 400, 16px);
+      @include font(14px, 16px);
       @include border-radius-left(100px, 100px);
     }
 
@@ -75,49 +92,58 @@
       padding: 7px;
       text-transform: capitalize;
       width: 100px;
-      @include font(14px, 400, 16px);
+      @include font(14px, 16px);
       @include border-radius-right(100px, 100px);
     }
   }
 
   ///###social###///
+
   &__wrp-social {
     background-color: $black-bkg;
   }
-
-  &__social {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    min-height: 79px;
-
-    &-copy {
-      color: $adventages-title;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 20px;
-    }
-
-    &-list {
+    &__social {
       align-items: center;
       display: flex;
-      gap: 7px;
-    }
+      justify-content: space-between;
+      min-height: 79px;
+      @media (max-width: $tables-width) {
+        flex-direction: column-reverse;
+      }
 
-    &-link:hover &-icon,
-    &-link:focus &-icon {
-      fill: $pink-color;
-      transition: all 1s ease .2s;
-    }
+      &-copy {
+        color: $adventages-title;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        @media (max-width: $tables-width) {
+          padding: 0 0 0 9px;
+        }
+      }
 
-    &-link:hover .social-icon__color,
-    &-link:focus .social-icon__color {
-      fill: $white-color;
-    }
+      &-list {
+        align-items: center;
+        display: flex;
+        gap: 7px;
+        @media (max-width: $tables-width) {
+         padding: 43px 0 40px 0;
+        }
+      }
 
-    &-link:active &-icon,
-    &-link:focus .social-icon__color {
-      opacity: .7;
+      &-link:hover &-icon,
+      &-link:focus &-icon {
+        fill: $pink-color;
+        transition: all 1s ease .2s;
+      }
+
+      &-link:hover .social-icon__color,
+      &-link:focus .social-icon__color {
+        fill: $white-color;
+      }
+
+      &-link:active &-icon,
+      &-link:focus .social-icon__color {
+        opacity: .7;
+      }
     }
   }
-}

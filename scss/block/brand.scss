@@ -4,6 +4,9 @@
 
   .brand__img-wrapper {
     background: #f4f2f3;
+    @media (max-width: $tables-width) {
+      //display: none;
+    }
 
     .brand__img {
       display: block;
@@ -14,25 +17,31 @@
 
   .brand__title {
     border-left: 12px $pink-color solid;
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 58px;
     padding-left: 16px;
     text-transform: uppercase;
-
+    @include font(48px, 58px, 900);
+    @media (max-width: $laptop-width) {
+      @include font(44px, 53px, 900);
+    }
+    @media (max-width: $tables-width) {
+      @include font(38px, 46px, 900);
+    }
+    &-lower {
+      display: block;
+      @include font(32px, 38px, 700);
+      @media (max-width: $laptop-width) {
+        @include font(24px, 29px, 700);
+      }
+      @media (max-width: $tables-width) {
+        @include font(20px, 24px, 700);
+      }
+    }
     &-wpr {
       align-items: center;
       background-color: $pink-bkg;
       display: flex;
       flex-grow: 1;
       padding-left: 64px;
-    }
-
-    &-lower {
-      display: block;
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 38px;
     }
 
     &-pink {

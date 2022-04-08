@@ -29,13 +29,13 @@ fieldset {
 
 .form__radio-label {
   margin-right: 20px;
-  @include font(11px, 300, 13px);
+  @include font(11px, 13px, 300);
   cursor: pointer;
 }
 
 .form__text {
   padding-top: 15px;
-  @include font(13px, 300, 16px);
+  @include font(13px, 16px, 300);
 }
 
 .form__label_radio {
