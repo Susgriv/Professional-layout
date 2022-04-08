@@ -18,14 +18,18 @@
 
     &--woman {
       background-image: url('../img/sales/women.jpg');
+      background-repeat: no-repeat no-repeat;
+      background-position: center;
     }
 
     &--man {
       background-image: url('../img/sales/man.jpg');
+      background-size: contain;
     }
 
     &--kids {
       background-image: url('../img/sales/kids.jpg');
+      background-size: auto;
     }
 
     &--accessories {

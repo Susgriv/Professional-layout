@@ -1,51 +1,60 @@
 .brand {
   display: grid;
   grid-template-columns:1fr 1fr;
+  @media (max-width: $tables-width) {
+    grid-template: 1fr / 1fr;
+  }
 
-  .brand__img-wrapper {
+  &__img-wrapper {
     background: #f4f2f3;
     @media (max-width: $tables-width) {
-      //display: none;
+      display: none;
     }
 
-    .brand__img {
+    &__img {
       display: block;
-      max-width: 800px;
+      //max-width: 800px;
       width: 100%;
     }
   }
 
-  .brand__title {
-    border-left: 12px $pink-color solid;
-    padding-left: 16px;
-    text-transform: uppercase;
-    @include font(48px, 58px, 900);
-    @media (max-width: $laptop-width) {
-      @include font(44px, 53px, 900);
-    }
+  &__title-wpr {
+    align-items: center;
+    background-color: $pink-bkg;
+    display: flex;
+    flex-grow: 1;
+    padding-left: 64px;
     @media (max-width: $tables-width) {
-      @include font(38px, 46px, 900);
-    }
-    &-lower {
-      display: block;
-      @include font(32px, 38px, 700);
-      @media (max-width: $laptop-width) {
-        @include font(24px, 29px, 700);
-      }
-      @media (max-width: $tables-width) {
-        @include font(20px, 24px, 700);
-      }
-    }
-    &-wpr {
-      align-items: center;
-      background-color: $pink-bkg;
-      display: flex;
-      flex-grow: 1;
-      padding-left: 64px;
+      padding: 148px 56px 149px 83px;
+      justify-content: center;
     }
 
-    &-pink {
-      color: $pink-color;
+    &__title {
+      border-left: 12px $pink-color solid;
+      padding-left: 16px;
+      text-transform: uppercase;
+      @include font(48px, 58px, 900);
+      @media (max-width: $laptop-width) {
+        @include font(44px, 53px, 900);
+      }
+      @media (max-width: $tables-width) {
+        @include font(38px, 46px, 900);
+      }
+
+      &-lower {
+        display: block;
+        @include font(32px, 38px, 700);
+        @media (max-width: $laptop-width) {
+          @include font(24px, 29px, 700);
+        }
+        @media (max-width: $tables-width) {
+          @include font(20px, 24px, 700);
+        }
+      }
+
+      &-pink {
+        color: $pink-color;
+      }
     }
   }
 }

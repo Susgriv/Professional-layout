@@ -4,27 +4,17 @@
   line-height: $line-height;
   font-style: $font-style;
 }
-@mixin font-size ($font-size, $line-height) {
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin border-radius($topLeft, $topRight, $bottRight, $bottLeft) {
-  border-bottom-left-radius: $bottLeft;
-  border-top-left-radius: $topLeft;
-  border-bottom-right-radius: $bottRight;
-  border-top-right-radius: $topRight;
-}
 
 @mixin border-radius-left($topLeft, $bottLeft) {
   border-top-left-radius: $topLeft;
   border-bottom-left-radius: $bottLeft;
 }
 
-@mixin border-radius-right ($topRight, $bottRight) {
+@mixin border-radius-right($topRight, $bottRight) {
   border-top-right-radius: $topRight;
   border-bottom-right-radius: $bottRight;
 }
-@mixin sale-bkg-img () {
+
+@mixin sale-bkg-img() {
   background-repeat: no-repeat;
 }
