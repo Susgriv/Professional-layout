@@ -18,3 +18,11 @@
     opacity: .5;
   }
 }
+.form .form__button-card {
+  background-color: transparent;
+  padding: 10px 12px 14px 15px;
+  text-transform: uppercase;
+  border: 1px solid $color-text;
+  color: $color-text;
+  margin: 0;
+}

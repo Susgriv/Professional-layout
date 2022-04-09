@@ -1,43 +1,60 @@
 .brand {
   display: grid;
   grid-template-columns:1fr 1fr;
+  @media (max-width: $tables-width) {
+    grid-template: 1fr / 1fr;
+  }
 
-  .brand__img-wrapper {
+  &__img-wrapper {
     background: #f4f2f3;
+    @media (max-width: $tables-width) {
+      display: none;
+    }
 
-    .brand__img {
+    &__img {
       display: block;
-      float: right;
-      max-width: 800px;
+      //max-width: 800px;
       width: 100%;
     }
   }
 
-  .brand__title-wpr {
+  &__title-wpr {
     align-items: center;
     background-color: $pink-bkg;
     display: flex;
     flex-grow: 1;
     padding-left: 64px;
+    @media (max-width: $tables-width) {
+      padding: 148px 56px 149px 83px;
+      justify-content: center;
+    }
   }
 
-  .brand__title {
+  &__title {
     border-left: 12px $pink-color solid;
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 58px;
     padding-left: 16px;
     text-transform: uppercase;
-  }
+    @include font(48px, 58px, 900);
+    @media (max-width: $laptop-width) {
+      @include font(44px, 53px, 900);
+    }
+    @media (max-width: $tables-width) {
+      @include font(38px, 46px, 900);
+    }
 
-  .brand__title-lower {
-    display: block;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38px;
-  }
+    &-lower {
+      display: block;
+      @include font(32px, 38px, 700);
+      @media (max-width: $laptop-width) {
+        @include font(24px, 29px, 700);
+      }
+      @media (max-width: $tables-width) {
+        @include font(20px, 24px, 700);
+      }
+    }
 
-  .brand__title-pink {
-    color: $pink-color;
+    &-pink {
+      color: $pink-color;
+    }
   }
 }

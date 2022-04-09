@@ -3,48 +3,42 @@
   grid-template-columns: 4fr 1fr 8fr;
   padding-bottom: 96px;
   padding-top: 64px;
-}
 
-.registration__form-wrapper {
-}
+  &__content {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    padding-right: 10px;
 
-.registration__form {
-}
+    &-header {
+      font-weight: 300;
+      padding-bottom: 22px;
+      text-transform: uppercase;
+    }
 
-.registration__content {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 29px;
-  padding-right: 10px;
-}
+    &-text {
+      padding-bottom: 21px;
+    }
 
-.registration__content-header {
-  font-weight: 300;
-  padding-bottom: 22px;
-  text-transform: uppercase;
-}
+    &-list {
+    }
 
-.registration__content-text {
-  padding-bottom: 21px;
-}
+    &-item {
+      margin-left: 25px;
+      padding-bottom: 16px;
+      position: relative;
+    }
 
-.registration__content-list {
-}
-
-.registration__content-item {
-  margin-left: 25px;
-  padding-bottom: 16px;
-  position: relative;
-}
-
-.registration__content-item:before {
-  background: transparent;
-  background-image: url(../img/icons/check.svg);
-  background-size: 15px 15px;
-  content: '';
-  height: 15px;
-  left: -25px;
-  position: absolute;
-  top: 5px;
-  width: 15px;
+    &-item:before {
+      background: transparent;
+      background-image: url(../img/icons/check.svg);
+      background-size: 15px 15px;
+      content: '';
+      height: 15px;
+      left: -25px;
+      position: absolute;
+      top: 5px;
+      width: 15px;
+    }
+  }
 }
