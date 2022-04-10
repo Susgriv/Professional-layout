@@ -1,51 +1,63 @@
 .total {
   background-color: $total-bkg;
   margin-top: 58px;
-}
+  @include laptop {
+    margin-top: 38px;
+  }
 
-.total__wrapper {
-  padding: 39px 34px 42px 44px;
-}
+  &__wrapper {
+    padding: 39px 34px 42px 44px;
+    @include mobile {
+      width: 100%;
+      height: 214px;
+    }
+  }
 
-.total__sub {
-  margin-bottom: 12px;
-  text-align: end;
-  text-transform: uppercase;
-  @include font(11px, 13px);
-}
+  &__sub {
+    margin-bottom: 12px;
+    text-align: end;
+    text-transform: uppercase;
+    @include font(11px, 13px);
+  }
 
-.total__grand_gray {
-  margin-right: -5px;
-  margin-left: 25px;
-}
+  &__grand_gray {
+    margin-right: -5px;
+    margin-left: 25px;
+  }
 
-.total__grand {
-  margin-bottom: 21px;
-  text-align: end;
-  text-transform: uppercase;
-  @include font(16px, 19px, 300);
-}
+  &__grand {
+    margin-bottom: 21px;
+    text-align: end;
+    text-transform: uppercase;
+    @include font(16px, 19px, 300);
 
-.total__line {
-  border: none;
-  color: $total-line;
-  background-color: $total-line;
-  height: 1px;
-}
+    &_red {
+      color: $pink-color;
+      margin-left: 25px;
+    }
 
-.total__grand_red {
-  color: $pink-color;
-  margin-left: 25px;
-}
+    &_gray {
+      margin-right: -5px;
+      margin-left: 25px;
+    }
+  }
 
-.total__button-wrp {
-  display: flex;
-  justify-content: center;
-}
+  &__line {
+    border: none;
+    color: $total-line;
+    background-color: $total-line;
+    height: 1px;
+  }
 
-.total__button {
-  margin: 17px 0 0 0;
-  padding: 15px 43px 16px 41px;
-  @include font(16px, 19px, 300);
-  text-transform: uppercase;
+  &__button {
+    margin: 17px 0 0 0;
+    padding: 15px 43px 16px 41px;
+    @include font(16px, 19px, 300);
+    text-transform: uppercase;
+
+    &-wrp {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }

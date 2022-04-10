@@ -10,14 +10,14 @@
 
   &__container-logo {
     margin-right: 41px;
-    @media (max-width: $laptop-width) {
+    @include laptop {
       margin-left: 1em;
       margin-right: 41px;
     }
-    @media (max-width: $tables-width) {
+    @include tables {
       margin-left: 32px;
     }
-    @media (max-width: $mobile-widht) {
+    @include mobile {
       margin-left: 16px;
     }
   }
@@ -39,14 +39,13 @@
     align-items: center;
     display: flex;
     margin-right: 10px;
-
-    @media (max-width: $laptop-width) {
+    @include laptop {
       margin-right: 16px;
     }
-    @media (max-width: $tables-width) {
+    @include tables {
       margin-right: 25px;
     }
-    @media (max-width: $mobile-widht) {
+    @include mobile {
       margin-right: 16px;
     }
   }
@@ -56,8 +55,11 @@
     border: none;
   }
 
-  &-link {
+  &__link {
     margin-left: 33px;
+    @include tables {
+      display: none;
+    }
   }
 
   &__container-find {
@@ -109,20 +111,4 @@
   &__icon {
     fill: $white-color;
   }
-
-  &__menu-title_basket, &__menu-title_person {
-    @media (max-width: 375px) {
-      display: none;
-    }
-  }
-
-}
-
-header {
-  display: none ;
-}
-
-
-footer {
-  display: none;
 }

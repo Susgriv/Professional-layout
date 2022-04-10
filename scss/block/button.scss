@@ -1,6 +1,5 @@
 .button {
-  font-size: 16px;
-  line-height: 19px;
+  @include font (16px, 19px);
   margin-top: 49px;
   padding: 14px 39px;
   transition: all .3s ease .2s;
@@ -17,12 +16,4 @@
   &:active {
     opacity: .5;
   }
-}
-.form .form__button-card {
-  background-color: transparent;
-  padding: 10px 12px 14px 15px;
-  text-transform: uppercase;
-  border: 1px solid $color-text;
-  color: $color-text;
-  margin: 0;
 }
