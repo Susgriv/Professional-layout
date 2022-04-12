@@ -31,22 +31,22 @@
     }
 
     &--woman {
-      background-image: url('../../img/sales/women.jpg');
+      background-image: url('../img/sales/women.jpg');
       @include sale-bkg-img();
     }
 
     &--man {
-      background-image: url('../../img/sales/man.jpg');
+      background-image: url('../img/sales/man.jpg');
       @include sale-bkg-img();
     }
 
     &--kids {
-      background-image: url('../../img/sales/kids.jpg');
+      background-image: url('../img/sales/kids.jpg');
       @include sale-bkg-img();
     }
 
     &--accessories {
-      background-image: url('../../img/sales/accessories.jpg');
+      background-image: url('../img/sales/accessories.jpg');
       @include sale-bkg-img();
       grid-column: 1 / span 3;
       max-height: 180px;
