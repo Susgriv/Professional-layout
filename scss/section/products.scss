@@ -91,17 +91,23 @@
 
   &__item-button {
     display: none;
-    background: url(../img/icons/basket.svg) no-repeat 5px center;
+    background: url(../../img/icons/basket.svg) no-repeat 5px center;
     height: 43px;
     padding: 5px 16px 5px 50px;
   }
 
   &__item:hover &__item-button,
-  &__item:hover &__item-container:before {
+  &__item:hover &__item-container:before,
+  &__item:focus &__item-button,
+  &__item:focus &__item-container:before {
     display: block;
   }
+&__item-button:active {
+    background-color: rgba(54, 23, 23, 0.7);
+  }
 
-  &__item:hover &__item-button {
+  &__item:hover &__item-button,
+  &__item:active &__item-button{
     cursor: pointer;
   }
 }
