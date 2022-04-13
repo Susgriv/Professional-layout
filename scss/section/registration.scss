@@ -1,19 +1,35 @@
 .registration {
   display: grid;
-  grid-template-columns: 4fr 1fr 8fr;
+  grid-template-columns: 360px 1fr;
   padding-bottom: 96px;
   padding-top: 64px;
+  @include tables {
+    grid-template-rows: 1fr minmax(340px, 340px);
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    display: grid;
+    justify-items: center;
+  }
 
   &__content {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
+    @include  font (24px, 29px, 300);
     padding-right: 10px;
+    margin-left: 128px;
+    @include laptop {
+      @include font (16px, 19px, 300);
+      margin-left: 22px;
+      @include  tables {
+        margin: auto 0;
+      }
+    }
 
-    &-header {
+    &-title {
       font-weight: 300;
       padding-bottom: 22px;
       text-transform: uppercase;
+      @include tables {
+        margin-top: 40px;
+      }
     }
 
     &-text {

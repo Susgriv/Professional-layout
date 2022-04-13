@@ -26,5 +26,25 @@ body {
   //max-width: 1300px;
   margin: 0 auto;
   max-width: 1140px;
-  min-width: 100px;
 }
+  @media (max-width: $desktop-width) {
+    .container {
+      width: 92%;
+    }
+  }
+  @media (max-width: $laptop-width) {
+    .container {
+      width: 98%;
+    }
+  }
+  @media (max-width: $tables-width) {
+    .container {
+      width: 92%;
+    }
+  }
+  @media (max-width: $mobile-widht) {
+    .container {
+      width: 92%;
+    }
+  }
+

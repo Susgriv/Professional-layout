@@ -1,24 +1,24 @@
+//.form {
+//  width: 360px;
+//}
 fieldset {
   display: flex;
   flex-direction: column;
 }
 
 .form__legend {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 19px;
+  @include font (16px, 19px, 300);
   padding-bottom: 20px;
 }
 
 .form__label {
   padding-bottom: 20px;
+  max-height: 44px;
 }
 
 .form__input {
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 16px;
-  padding: 13px 0 16px 17px;
+  @include font (13px, 16px, 300);
+  padding: 12px 0 12px 17px;
   width: 100%;
 }
 

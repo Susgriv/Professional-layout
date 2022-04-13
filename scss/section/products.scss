@@ -3,15 +3,13 @@
   text-align: center;
 
   &__title {
+    @include font (30px, 36px);
     color: $black-bkg;
-    font-size: 30px;
-    line-height: 36px;
   }
 
   &__sub-title {
     color: $color-text;
-    font-size: 14px;
-    line-height: 17px;
+    @include font (14px, 17px);
     margin-top: 6px;
   }
 
@@ -21,6 +19,15 @@
     margin-top: 48px;
     grid-template: 1fr / repeat(3, 1fr);
     grid-auto-flow: row;
+    @include laptop {
+      grid-template: 1fr / repeat(2, 1fr);
+      justify-items: center;
+      gap: 15px;
+    }
+    @include tables {
+      grid-template: 1fr / repeat(1, 1fr);
+      justify-items: center;
+    }
 
     .products__item {
       background: $adventages-title;
@@ -48,25 +55,21 @@
       }
 
       &-title {
+        @include font (13px, 16px);
         color: $black;
-        font-size: 13px;
-        line-height: 16px;
         padding: 0 0 13px 18px;
         text-transform: uppercase;
       }
 
       &-text {
+        @include font (14px, 17px, 300);
         color: $color-text;
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 17px;
         padding: 0 0 18px 18px;
       }
 
       &-price {
+        @include font (16px, 19px);
         color: $pink-color;
-        font-size: 16px;
-        line-height: 19px;
         padding: 0 0 20px 18px;
       }
 
@@ -90,16 +93,21 @@
     display: none;
     background: url(../img/icons/basket.svg) no-repeat 5px center;
     height: 43px;
-    line-height: 0;
     padding: 5px 16px 5px 50px;
   }
 
   &__item:hover &__item-button,
-  &__item:hover &__item-container:before {
+  &__item:hover &__item-container:before,
+  &__item:focus &__item-button,
+  &__item:focus &__item-container:before {
     display: block;
   }
+&__item-button:active {
+    background-color: rgba(54, 23, 23, 0.7);
+  }
 
-  &__item:hover &__item-button {
+  &__item:hover &__item-button,
+  &__item:active &__item-button{
     cursor: pointer;
   }
 }
