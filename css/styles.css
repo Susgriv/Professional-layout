@@ -938,4 +938,49 @@ fieldset {
     .total__button-wrp {
       text-align: center; }
 
+.form-control {
+  margin-left: 10px; }
+
+.dropdown-menu > li:first-child {
+  text-transform: uppercase; }
+
+.product__breadcrumb {
+  background-color: #f1e4e6; }
+
+.breadcrumb__wrp {
+  text-transform: uppercase; }
+
+.breadcrumb__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  font-style: normal;
+  padding: 60px 0;
+  color: #f26376; }
+
+.breadcrumb {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  font-style: normal; }
+
+.breadcrumb-item.active {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  font-style: normal;
+  color: #f26376; }
+
+.container__description-wrp {
+  max-width: 555px; }
+
+.hr-pink {
+  color: #f26376;
+  border: 3px solid #f26376;
+  width: 63px; }
+
+.hr-gray {
+  color: #5d5d5d;
+  width: 100%; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,37 @@
+.form-control {
+  margin-left: 10px;
+}
+.dropdown-menu > li:first-child {
+  text-transform: uppercase;
+}
+.product__breadcrumb {
+  background-color: $pink-bkg;
+}
+.breadcrumb__wrp {
+
+  text-transform: uppercase;
+}
+.breadcrumb__title {
+  @include font(24px, 29px);
+padding: 60px 0;
+  color: $pink-color;
+}
+.breadcrumb {
+  @include font(14px, 17px);
+}
+.breadcrumb-item.active{
+  @include font(14px, 17px, 700);
+  color:  $pink-color;
+}
+.container__description-wrp {
+  max-width: 555px;
+}
+.hr-pink {
+ color: #f26376;
+  border: 3px solid #f26376;
+  width: 63px;
+}
+.hr-gray {
+  color: #5d5d5d;
+  width: 100%;
+}
