@@ -1,8 +1,8 @@
 @import '../node_modules/bootstrap/scss/functions';
 
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Yomogi&display=swap');
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons';
+
 $font-family-base: 'Lato';
 
 $secondary: #f8f3f4;
@@ -10,8 +10,8 @@ $dark: #222;
 $danger: #f16d7f;
 
 //$breadcrumb-active-color: #f16d7f;
-$link-color:                              #5d5d5d;
-$link-decoration:                         none;
+$link-color: #5d5d5d;
+$link-decoration: none;
 
 //$link-shade-percentage:                   20% !default;
 //$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
@@ -43,7 +43,7 @@ $badge-font-size: 10px;
 //@import '../node_modules/bootstrap/scss/button-group';
 @import '../node_modules/bootstrap/scss/nav';
 @import '../node_modules/bootstrap/scss/navbar';
-//@import '../node_modules/bootstrap/scss/card';
+@import '../node_modules/bootstrap/scss/card';
 //@import '../node_modules/bootstrap/scss/accordion';
 @import '../node_modules/bootstrap/scss/breadcrumb';
 //@import '../node_modules/bootstrap/scss/pagination';
@@ -70,9 +70,68 @@ $badge-font-size: 10px;
 .dropdown-menu {
   max-width: 222px;
 }
+
 .dropdown-menu > li {
   padding-left: 33px;
 }
+
 .breadcrumb {
   margin: 0;
+}
+
+.carousel__wrp {
+  background: #f7f7f7;
+}
+
+.carousel-inner__wrp {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.card-body {
+  background: #f8f8f8;
+}
+
+.footer__wrp {
+  background-image: url('../img/footer/footer-bkg.png');
+  background-size: cover;
+}
+
+.description__container {
+  margin-top: -25px;
+  background-color: #fff;
+}
+
+.product_card {
+  margin-top: 129px;
+}
+
+.social {
+  background: #222222;
+}
+.social-icon {
+  fill: #fff;
+  transition: all 1s ease .2s;
+
+  &__color {
+    fill: $dark;
+    transition: all 1s ease .2s;
+  }
+}
+
+
+.footer-link:hover .footer-icon,
+.footer-link:focus .footer-icon {
+  fill: $danger;
+  transition: all 1s ease .2s;
+}
+
+.footer-link:hover .social-icon__color,
+.footer-link:focus .social-icon__color {
+  fill: #fff;
+}
+
+.footer-link:active .footer-icon,
+.footer-link:focus .social-icon__color {
+  opacity: .7;
 }
