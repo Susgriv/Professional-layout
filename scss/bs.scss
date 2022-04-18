@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Yomogi&display=swap');
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons';
 
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
+//@import '../node_modules/@fortawesome/fontawesome-free/scss/brands';
+//@import '../node_modules/@fortawesome/fontawesome-free/scss/regular';
+
 $font-family-base: 'Lato';
 
 $secondary: #f8f3f4;
@@ -40,7 +46,7 @@ $badge-font-size: 10px;
 @import '../node_modules/bootstrap/scss/buttons';
 @import '../node_modules/bootstrap/scss/transitions';
 @import '../node_modules/bootstrap/scss/dropdown';
-//@import '../node_modules/bootstrap/scss/button-group';
+@import '../node_modules/bootstrap/scss/button-group';
 @import '../node_modules/bootstrap/scss/nav';
 @import '../node_modules/bootstrap/scss/navbar';
 @import '../node_modules/bootstrap/scss/card';
