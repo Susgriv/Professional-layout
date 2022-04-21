@@ -3,11 +3,13 @@
   display: flex;
   justify-content: space-between;
 }
+
 .breadcrumb__wrp {
   display: flex;
   text-transform: uppercase;
 
 }
+
 .breadcrumb-item__link {
   color: $color-text;
   margin-right: 30px;
@@ -22,6 +24,7 @@
   right: -25px;
   width: 15px;
 }
+
 .text-danger {
   color: $pink-color;
   @include font(14px, 17px, 700);

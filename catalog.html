@@ -131,7 +131,7 @@
               d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
         </svg>
       </button>
-      <nav class="dropdown-content">trending now
+      <nav class="dropdown-content">filter
         <svg class="dropdown-content__sort-red" width="15" height="10" viewBox="0 0 15 10"
              xmlns="http://www.w3.org/2000/svg">
           <path
@@ -139,43 +139,106 @@
         </svg>
         <h2 class="dropdown__title">category</h2>
         <ul class="dropdown__list">
-          <li class="dropdown__item">Accessories</li>
-          <li class="dropdown__item">Bags</li>
-          <li class="dropdown__item">Denim</li>
-          <li class="dropdown__item">Hoodies & Sweatshirts</li>
-          <li class="dropdown__item">Jackets & Coats</li>
-          <li class="dropdown__item">Polos</li>
-          <li class="dropdown__item">Shirts</li>
-          <li class="dropdown__item">Shoes</li>
-          <li class="dropdown__item">Sweaters & Knits</li>
-          <li class="dropdown__item">T-Shirts</li>
-          <li class="dropdown__item">Tanks</li>
+          <li class="dropdown__item"><a class="dropdown__item--link" href="#">Accessories</a></li>
+          <li class="dropdown__item"><a class="dropdown__item--link" href="#">Bags</a></li>
+          <li class="dropdown__item"><a class="dropdown__item--link" href="#">Denim</a></li>
+          <li class="dropdown__item"><a class="dropdown__item--link" href="#">Hoodies & Sweatshirts</a></li>
+          <li class="dropdown__item"><a class="dropdown__item--link" href="#">Jackets & Coats</a></li>
+          <li class="dropdown__item"><a class="dropdown__item--link" href="#">Polos</a></li>
+          <li class="dropdown__item"><a class="dropdown__item--link" href="#">Shirts</a></li>
+          <li class="dropdown__item"><a class="dropdown__item--link" href="#">Shoes</a></li>
+          <li class="dropdown__item"><a class="dropdown__item--link" href="#">Sweaters & Knits</a></li>
+          <li class="dropdown__item"><a class="dropdown__item--link" href="#">T-Shirts</a></li>
+          <li class="dropdown__item"><a class="dropdown__item--link" href="#">Tanks</a></li>
         </ul>
         <h2 class="dropdown__title">brand</h2>
         <h2 class="dropdown__title">designer</h2>
       </nav>
     </div>
-    <div class="dropdown-content__wrp">
-      <button class="dropdown-content__button">filter <i class="fa-solid fa-angle-down"></i></button>
-      <nav class="dropdown-content">filter
-        <ul class="dropdown__list">
-          <input type="checkbox" id="xs" name="scales" checked>
-          <label for="xs">xs</label>
-          <li class="dropdown__item">
-            <input type="checkbox" id="m" name="scales" checked>
-            <label for="m">m</label>
-          </li>
-          <li class="dropdown__item">m</li>
-          <input type="checkbox" id="xs" name="scales" checked>
-          <label for="xs">xs</label>
-          <li class="dropdown__item">l</li>
-          <input type="checkbox" id="xs" name="scales" checked>
-          <label for="xs">xs</label>
-          <li class="dropdown__item">xl</li>
-          <input type="checkbox" id="xs" name="scales" checked>
-          <label for="xs">xs</label>
-        </ul>
+    <div class="dropdown-menu__wrapper">
+    <div class="dropdown-menu__wrp">
+      <button class="dropdown-content__button">trending now</button><i class="fa-solid fa-angle-down"></i>
+      <nav class="dropdown-menu">
+        <form class="dropdown-menu__form" method="get" action="">
+          <ul class="dropdown__list-menu">
+            <li class="dropdown__item">
+              <label>
+                <input type="checkbox" name="scales">
+              </label>
+            </li>
+            <li class="dropdown__item">
+              <label>
+                <input type="checkbox" name="scales">
+              </label>
+            </li>
+            <li class="dropdown__item">
+              <label>
+                <input type="checkbox" name="scales">
+              </label>
+            </li>
+            <li class="dropdown__item">
+              <label>
+                <input type="checkbox" name="scales">
+              </label>
+            </li>
+          </ul>
+        </form>
       </nav>
+    </div>
+    <div class="dropdown-menu__wrp">
+      <button class="dropdown-content__button">size<i class="fa-solid fa-angle-down"></i></button>
+      <nav class="dropdown-menu">
+        <form class="dropdown-menu__form" method="get" action="">
+          <ul class="dropdown__list-menu">
+            <li class="dropdown__item">
+              <input type="checkbox" id="xs" name="scales">
+              <label for="xs">xs</label>
+            </li>
+            <li class="dropdown__item">
+              <input type="checkbox" id="s" name="scales">
+              <label for="s">s</label>
+            </li>
+            <li class="dropdown__item">
+              <input type="checkbox" id="m" name="scales">
+              <label for="m">m</label>
+            </li>
+            <li class="dropdown__item">
+              <input type="checkbox" id="l" name="scales">
+              <label for="l">l</label>
+            </li>
+          </ul>
+        </form>
+      </nav>
+    </div>
+    <div class="dropdown-menu__wrp">
+      <button class="dropdown-content__button">size<i class="fa-solid fa-angle-down"></i></button>
+      <nav class="dropdown-menu">
+        <form class="dropdown-menu__form" method="get" action="">
+          <ul class="dropdown__list-menu">
+            <li class="dropdown__item">
+              <label>
+                <input type="checkbox" name="scales">
+              </label>
+            </li>
+            <li class="dropdown__item">
+              <label>
+                <input type="checkbox" name="scales">
+              </label>
+            </li>
+            <li class="dropdown__item">
+              <label>
+                <input type="checkbox" name="scales">
+              </label>
+            </li>
+            <li class="dropdown__item">
+              <label>
+                <input type="checkbox" name="scales">
+              </label>
+            </li>
+          </ul>
+        </form>
+      </nav>
+    </div>
     </div>
   </section>
   <section class="products container">

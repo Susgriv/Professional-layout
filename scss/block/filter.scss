@@ -1,14 +1,14 @@
 .wrapper {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 .dropdown-content__wrp {
   position: relative;
 }
 
 .dropdown-content__button {
-  padding-top: 51px;
+  margin-top: 51px;
 }
 
 .dropdown-content {
