@@ -3,13 +3,13 @@
   text-align: center;
 
   &__title {
-    @include font (30px, 36px);
+    @include font(30px, 36px);
     color: $black-bkg;
   }
 
   &__sub-title {
     color: $color-text;
-    @include font (14px, 17px);
+    @include font(14px, 17px);
     margin-top: 6px;
   }
 
@@ -35,6 +35,12 @@
       text-align: start;
       max-width: 360px;
 
+      &-hidden {
+        @include laptop {
+          display: none;
+        }
+      }
+
       &-container {
         position: relative;
         margin-bottom: 25px;
@@ -55,20 +61,20 @@
       }
 
       &-title {
-        @include font (13px, 16px);
+        @include font(13px, 16px);
         color: $black;
         padding: 0 0 13px 18px;
         text-transform: uppercase;
       }
 
       &-text {
-        @include font (14px, 17px, 300);
+        @include font(14px, 17px, 300);
         color: $color-text;
         padding: 0 0 18px 18px;
       }
 
       &-price {
-        @include font (16px, 19px);
+        @include font(16px, 19px);
         color: $pink-color;
         padding: 0 0 20px 18px;
       }
@@ -102,12 +108,13 @@
   &__item:focus &__item-container:before {
     display: block;
   }
-&__item-button:active {
+
+  &__item-button:active {
     background-color: rgba(54, 23, 23, 0.7);
   }
 
   &__item:hover &__item-button,
-  &__item:active &__item-button{
+  &__item:active &__item-button {
     cursor: pointer;
   }
 }
