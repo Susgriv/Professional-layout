@@ -1,5 +1,5 @@
 @import 'variables';
-@import "fonts";
+@import 'fonts';
 @import 'mixins';
 @import 'general';
 @import 'reset';
@@ -8,13 +8,16 @@
 @import 'section/brand';
 @import 'section/sales';
 @import 'section/products';
+@import 'block/pagination';
 @import 'section/advantages';
 @import 'block/button';
 @import 'section/footer';
 @import 'block/social-icon';
 @import 'section/page_title';
+@import 'block/breadcrumb';
 @import 'section/registration';
 @import 'section/card';
 @import 'block/form';
 @import 'block/total';
-@import 'block/breadcrumb';
+@import 'block/filter';
+@import 'block/dropdown-menu';
